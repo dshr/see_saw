@@ -1,0 +1,2590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>see///SAW</title>
+	<meta charset='utf-8'>
+	<style type="text/css">
+        
+        a{
+            color: black;
+            font-family:sans-serif;
+            font-style: italic;
+        }
+        .wrapper {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;  
+              
+            -webkit-flex-flow: row wrap;
+            
+            align-items: center;
+            align-content: center;
+            
+            height: 100%;
+            width: 100%;
+        }
+        header{
+            text-align: center;
+        	margin: auto;
+            border-radius: 5px;
+        }
+        .wrapper > * {
+            padding: 10px;
+            flex: 1 100%;
+        }
+        
+        .main {
+          text-align: center;
+            z-index: 2;
+        }
+        
+        .aside-1 {
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .aside-2 {
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .footer {
+            text-align: center;
+            z-index: 1;
+        }
+        
+        @media all and (min-width: 600px) {
+          .aside { flex: 1 auto; }
+        }
+        
+        @media all and (min-width: 800px) {
+          .main    { flex: 2 0px; }
+          .aside-1 { order: 1; } 
+          .main    { order: 2; }
+          .aside-2 { order: 3; }
+          .footer  { order: 4; }
+        }
+        
+		.Absolute-Center {
+			width: 100%;
+
+			overflow: auto;
+            margin: auto;
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+			text-align: center;
+			background-color: white;
+		}
+        .grid{
+/*            position: relative;*/
+            display:inline-block;
+            width: 4%;
+            height: 3.5%;
+            min-height: 20px;
+            border-radius:25%;
+            -moz-border-radius:25%;
+            z-index: 2;
+        }
+        .gridOn{
+            border:1px solid;
+            border-color: #4AC2DB;
+            background-color:#4AC2DB;
+        }
+        
+        .gridOff{
+            border:1px solid;
+            border-color: #b2e8f4;
+            background-color:#b2e8f4;
+        }
+        
+        .gridSelected{
+            border:1px solid;
+            border-color: #4AC2DB;
+        }
+        
+        .instrControlPanel{
+            width: 10%;
+            height: 50%;
+            overflow: auto;
+            right: 7%;
+            top: 25%;
+            position: absolute;
+            background-color: white;
+            font-family: sans-serif;
+            font-size: 60%;
+            text-align: center;
+            -moz-box-shadow: 0 0 10px #bdbdbd;
+            -webkit-box-shadow: 0 0 10px #bdbdbd;
+            box-shadow: 0 0 10px #bdbdbd;
+            z-index: 3;
+        }
+        
+        .importExportPanel{
+            width: 40%;
+            height: 45%;
+            overflow: auto;
+            left: 30%;
+            bottom:25%;
+            padding: 10px;
+            position: absolute;
+            background-color: white;
+            font-family: sans-serif;
+            font-size: 60%;
+            text-align: center;
+            -moz-box-shadow: 0 0 10px #bdbdbd;
+            -webkit-box-shadow: 0 0 10px #bdbdbd;
+            box-shadow: 0 0 10px #bdbdbd;
+            z-index: 3;
+        }
+                
+        .instrSlider{
+            width: 70%;
+            height: 5%;
+            margin: 1px;
+        }
+        
+        .effectControlPanel{
+            width: 10%;
+            height: 50%;
+            overflow: auto;
+            top: 25%;
+            left: 5%;
+            position: absolute;
+            background-color: white;
+            font-family: sans-serif;
+            font-size: 60%;
+            text-align: center;
+            -moz-box-shadow: 0 0 10px #bdbdbd;
+            -webkit-box-shadow: 0 0 10px #bdbdbd;
+            box-shadow: 0 0 10px #bdbdbd;
+            z-index: 3;
+        }
+        
+        .verticalControls{
+            display: inline-block;
+            width: 20%;
+        }
+        .controlsLabels{
+            font-family: sans-serif;
+            font-size: 100%;
+            display:inline-block;
+            margin: 1px;
+        }
+        input[type='range'].effectSlider{
+            writing-mode: tb-lr;
+            -webkit-appearance: slider-vertical;
+            orient="vertical";
+            width: 10%;
+            height: 50%;
+        }
+        .menuOn{
+            border:3px solid;
+            border-color: #4AC2DB;
+            border-radius:15px;
+            -moz-border-radius:15px;
+        }
+        .menuOff{
+            border:3px solid;
+            border-color: #53ddf9;
+            border-radius:15px;
+            -moz-border-radius:15px;
+        }
+        
+        /*#enclosure{
+        border-top: 3px solid, #000;
+        border-left: 3px solid, #000;
+        border-right: 3px solid, #000;
+        border-bottom: 3px solid, #000;
+         
+        }*/
+        
+        #fxAside{
+        position: relative;
+        left: 9%;
+        margin: 5%;
+        }
+        
+        #instrAside{
+        position: relative;
+        margin: 5%;
+        right: 9%;
+        }
+        
+        input[type='button']{
+        	background: #707070;
+        	border: 3px solid #707070;
+        	border-radius: 5px;
+  			text-transform: uppercase;
+  			font: bolder 18pt "helvetica neue", helvetica, arial, sans-serif;
+  			/*letter-spacing: 3px;*/
+  			color: #fff;
+  			padding: 5px;
+  			margin: 2px;
+  			text-align: center;
+  			width: 43%;
+  			height: 8.5%;
+  			max-height: 90px;
+  			max-width: 150px
+        }
+        .fxbutton{
+        	background-color: #002c85;
+        	border: 3px solid #002c85;
+        }
+        
+        #playButton{
+        	background: #ADD14F;
+        	border: 3px solid #ADD14F;
+  		}		
+  		#instrButton1{
+        	background: #4ac2db;
+        	border: 3px solid #4ac2db;
+  			}
+  		#instrButton2{
+        	background: #f80c0c;
+        	border: 3px solid #f80c0c;
+  			}
+  		#instrButton3{
+  			background: #F47721;
+  			border: 3px solid #F47721;
+  		}
+        #instrButton4{
+  			background: #ADD14F;
+  			border: 3px solid #ADD14F;
+  		}
+  		#drumButton{
+        	background: #8658a5;
+        	border: 3px solid #8658a5;
+  		}
+  		#instrOptions{
+  			background: #707070;
+        	border: 3px solid #707070;
+  			}
+  		#importExport{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#importExportPanel input[type='button']{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#showRecordings{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#closeRecordings{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#closeWahControls{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#closeDriveControls{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#closeFilterControls{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#closeChorusControls{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#closeDelayControls{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#closeReverbControls{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+		#closeCompControls{
+			background: #707070;
+			border: 3px solid #707070;
+			font: normal 12pt "helvetica neue", helvetica, sans-serif;
+		}
+  		.buttonStack{
+  			display = block;
+  		}
+  		#creators{
+  			font: normal 10pt "helvetica neue", helvetica, sans-serif;
+  		}
+  		#logo{
+  		display: block;
+  		position: absolute;
+  		right: 41%;
+  		}
+  			
+	</style>
+
+	<script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.stylesheet.js"></script>
+    <script type="text/javascript" src="tuna.js"></script>
+    <script type="text/javascript" src="recorder.js"></script>
+	<script type="text/javascript" src="snap.svg-min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function(event){
+            $('#menu').hide();
+            $('.effectControlPanel').hide();
+            $('.instrControlPanel').hide();
+            $('#importExportPanel').hide();
+            $('#recordingsPanel').hide();
+			var logo = Snap("#logo");
+			var logoText = logo.text("50%", "50%", ["see", "/", "/", "/", "/", "/", "SAW"]);
+			logoText.attr({
+				fill: "#000",
+				"font-size": "500%",
+				"font-family": "sans-serif",
+				"text-anchor": "middle",
+			});
+
+			logoText.selectAll("tspan:nth-child(2)").attr({
+			    fill: "#4AC2DB",
+			    'font-style': 'bold',
+			});
+
+			logoText.selectAll("tspan:nth-child(3)").attr({
+			    fill: "#F80C0C",
+			    'font-style': 'bold',
+			});
+
+			logoText.selectAll("tspan:nth-child(4)").attr({
+			    fill: "#F47721",
+			    'font-style': 'bold',
+			});
+
+			logoText.selectAll("tspan:nth-child(5)").attr({
+			    fill: "#ADD14F",
+			    'font-style': 'bold',
+			});
+
+			logoText.selectAll("tspan:nth-child(6)").attr({
+			    fill: "#8759a6",
+			    'font-style': 'bold',
+			});
+
+			var contextClass = (window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.oAudioContext || window.msAudioContext);
+			if (contextClass)
+			{
+				var context = new contextClass;
+                var tuna = new Tuna(context);
+                context.listener.setPosition(0, 0, 0);
+                
+                var masterVolume = context.createGain();
+                masterVolume.gain.value = 1;
+                masterVolume.connect(context.destination);
+                
+                var recorder = new Recorder(masterVolume);
+                
+                function createDownloadLink() {
+                    recorder.exportWAV(function(blob) {
+                        var url = URL.createObjectURL(blob);
+                        var li = document.createElement('li');
+                        var au = document.createElement('audio');
+                        var hf = document.createElement('a');
+                        var lb = document.createElement('br');
+                              
+                        au.controls = true;
+                        au.src = url;
+                        hf.href = url;
+                        hf.download = 'Download this recording';//new Date().toISOString() + '.wav';
+                        hf.innerHTML = hf.download;
+                        li.appendChild(au);
+                        li.appendChild(lb);
+                        li.appendChild(hf);
+                        recordingslist.appendChild(li);
+                    });
+                }
+                
+                Boolean.parse = function (str) {
+                  switch (str.toLowerCase()) {
+                    case "true":
+                      return true;
+                    case "false":
+                      return false;
+                    case "1":
+                      return true;
+                    case "0":
+                      return false;      
+                    default:
+                      throw new Error ("Boolean.parse: Cannot convert string to boolean.");
+                  }
+                };
+
+				function BufferLoader(context, urlList, callback) {
+				  this.context = context;
+				  this.urlList = urlList;
+				  this.onload = callback;
+				  this.bufferList = new Array();
+				  this.loadCount = 0;
+				}
+
+				BufferLoader.prototype.loadBuffer = function(url, index) {
+				  // Load buffer asynchronously
+				  var request = new XMLHttpRequest();
+				  request.open("GET", url, true);
+				  request.responseType = "arraybuffer";
+
+				  var loader = this;
+
+				  request.onload = function() {
+				    // Asynchronously decode the audio file data in request.response
+				    loader.context.decodeAudioData(
+				      request.response,
+				      function(buffer) {
+				        if (!buffer) {
+				          alert('error decoding file data: ' + url);
+				          return;
+				        }
+				        loader.bufferList[index] = buffer;
+				        if (++loader.loadCount == loader.urlList.length)
+				          loader.onload(loader.bufferList);
+				      },
+				      function(error) {
+				        console.error('decodeAudioData error', error);
+				      }
+				    );
+				  }
+
+				  request.onerror = function() {
+				    alert('BufferLoader: XHR error');
+				  }
+
+				  request.send();
+				}
+
+				BufferLoader.prototype.load = function() {
+				  for (var i = 0; i < this.urlList.length; ++i)
+				  this.loadBuffer(this.urlList[i], i);
+				}
+
+				var bufferLoader = new BufferLoader(context,['samples/rev_crash.wav', 'samples/rev_ride.wav', 
+                                                             'samples/rev_oh.wav', 'samples/rev_ch.wav', 
+                                                             'samples/crash.wav', 'samples/ride.wav', 
+                                                             'samples/hitom.wav', 'samples/mtom.wav', 
+                                                             'samples/ltom.wav', 'samples/oh.wav', 
+                                                             'samples/ch.wav', 'samples/clap.wav', 
+                                                             'samples/rev_snare.wav', 'samples/snare.wav', 
+                                                             'samples/rim.wav', 'samples/bd.wav'], samplesLoaded);
+
+				bufferLoader.load();
+
+				function samplesLoaded()
+				{
+					$('#splash').fadeOut(2000, function(){$('#menu').fadeIn(1000);});
+				}
+
+				function playDrum(buffer, duration, attack, decay, sustain, release, destination)
+				{
+					var source = context.createBufferSource();
+					source.buffer = buffer;                    
+                    this.adsr = context.createGain();
+
+					this.adsr.gain.value = 0;//set gain to 0, just in case
+
+					source.connect(this.adsr);//connect osc to adsr, adsr to output
+					this.adsr.connect(destination);
+
+					source.start(context.currentTime);
+
+					this.adsr.gain.linearRampToValueAtTime(0, context.currentTime);//run the adsr
+					this.adsr.gain.linearRampToValueAtTime(1, context.currentTime + (attack/1000.0));
+					this.adsr.gain.linearRampToValueAtTime(sustain/1000, context.currentTime + (attack/1000.0) + (decay/1000.0));
+					this.adsr.gain.linearRampToValueAtTime(0, context.currentTime + ((parseInt(duration)+parseInt(release))/1000.0));
+				}
+
+				function playSynth(semitone, duration, waveform, attack, decay, sustain, release, destination)
+				{
+					//semitone - the shift from a4 in semtiones
+					//duration - duration of note in ms
+					//waveform, an int. 0 - sine, 1 - square, 2 - saw, 3 - triangle. Other values will cause a crash. Will add a check for that later
+					//attack, decay and release in ms, sustain from 0 to 1000
+					this.oscillator = context.createOscillator();//create the nodes
+					this.adsr = context.createGain();
+
+					this.adsr.gain.value = 0;//set gain to 0, just in case
+
+					this.oscillator.connect(this.adsr);//connect osc to adsr, adsr to output
+					this.adsr.connect(destination);
+
+					this.oscillator.frequency.value = 440;//set center freq value(could be useful for key switching)
+					this.oscillator.type = waveform;//set waveform
+					this.oscillator.detune.value = semitone*100;//set detune
+
+					this.oscillator.noteOn(context.currentTime);//start playing the osc
+
+					this.adsr.gain.linearRampToValueAtTime(0, context.currentTime);//run the adsr
+					this.adsr.gain.linearRampToValueAtTime(1, context.currentTime + (attack/1000.0));
+					this.adsr.gain.linearRampToValueAtTime(sustain/1000, context.currentTime + (attack/1000.0) + (decay/1000.0));
+					this.adsr.gain.linearRampToValueAtTime(0, context.currentTime + ((parseInt(duration)+parseInt(release))/1000.0));
+
+					this.oscillator.noteOff(context.currentTime+((parseInt(duration)+parseInt(release))/1000.0));//kill the osc
+				}
+                
+                function EffectsBus(destination)
+                {
+                    this.input = context.createGain()
+                    this.input.gain.value = 1;
+                    
+                    this.wahwah = new tuna.WahWah({
+                         automode: true,                //true/false
+                         baseFrequency: 0.5,            //0 to 1 ++
+                         excursionOctaves: 2,           //1 to 6 ++
+                         sweep: 0.2,                    //0 to 1 ++
+                         resonance: 10,                 //1 to 100 ++
+                         sensitivity: 0.5,              //-1 to 1
+                         bypass: 1
+                     });
+                    
+                    this.overdrive = new tuna.Overdrive({
+                        outputGain: 0.5,         //0 to 1+ ++
+                        drive: 0.7,              //0 to 1 ++
+                        curveAmount: 1,          //0 to 1 ++
+                        algorithmIndex: 0,       //0 to 5, selects one of our drive algorithms ++selector
+                        bypass: 1
+                    });
+                    
+                    this.filter = new tuna.Filter({
+                         frequency: 1000,         //20 to 22050
+                         Q: 3,                  //0.001 to 100
+                         gain: 0,               //-40 to 40
+                         bypass: 1,             //0 to 1+
+                         filterType: 2,         //0 to 7, corresponds to the filter types in the native 
+//                        filter node: lowpass, highpass, bandpass, lowshelf, highshelf, peaking, notch, allpass in that order
+                         bypass: 1
+                     });
+                    
+                    this.chorus = new tuna.Chorus({
+                         rate: 1.5,         //0.01 to 8+ ++
+                         feedback: 0.2,     //0 to 1+ ++
+                         delay: 0.0045,     //0 to 1
+                         bypass: 1          //the value 1 starts the effect as bypassed, 0 or 1
+                     });
+                    
+                    this.delay = new tuna.Delay({
+                        feedback: 0.45,    //0 to 1+ ++
+                        delayTime: 150,    //how many milliseconds should the wet signal be delayed?++
+                        wetLevel: 0.25,    //0 to 1+ ++
+                        dryLevel: 1,       //0 to 1+
+                        cutoff: 22500,        //cutoff frequency of the built in highpass-filter. 20 to 22050 ++selector between two values
+                        bypass: 1
+                    });
+                    
+                    this.convolver = new tuna.Convolver({
+                        highCut: 22050,                         //20 to 22050
+                        lowCut: 20,                             //20 to 22050
+                        dryLevel: 1,                            //0 to 1+ ++
+                        wetLevel: 1,                            //0 to 1+ ++
+                        level: 1,                               //0 to 1+, adjusts total output of both wet and dry
+                        impulse: "impulses/impulse_rev.wav",    //the path to your impulse response ++? optionally
+                        bypass: 1
+                    });
+                    
+                    this.compressor = new tuna.Compressor({
+                         threshold: -24,    //-100 to 0 ++
+                         makeupGain: 1,     //0 and up ++ if not conflicting with automakeup
+                         attack: 1,         //0 to 1000 ++
+                         release: 0,        //0 to 3000 ++
+                         ratio: 4,          //1 to 20 ++
+                         knee: 5,           //0 to 40
+                         automakeup: true,  //true/false
+                         bypass: 1
+                     });
+                    
+                    this.input.connect(this.wahwah.input);
+                    this.wahwah.connect(this.overdrive.input);
+                    this.overdrive.connect(this.filter.input);
+                    this.filter.connect(this.chorus.input);
+                    this.chorus.connect(this.delay.input);
+                    this.delay.connect(this.convolver.input);
+                    this.convolver.connect(this.compressor.input);
+                    this.compressor.connect(destination);
+                }
+                
+                function DrumSequencer(colorOn, colorOff)
+                {
+                    this.attack = 10;
+					this.decay = 10;
+					this.sustain = 700;
+					this.release = 1000;
+                    
+                    this.colorOn = colorOn;
+                    this.colorOff = colorOff;
+                    
+                    this.grid = new Array(16);
+                    for(var i = 0; i<16; i++)
+                    {
+                        this.grid[i] = new Array(256);
+                        for(var j=0; j<256; j++)
+                        {
+                            this.grid[i][j] = false;
+                        }
+                    }
+                    
+                    this.panner = context.createPanner();
+                    this.instrOut = context.createGain();
+                    this.instrOut.gain.value = 1;
+                    
+                    this.fx = new EffectsBus(this.instrOut);
+                    this.panner.connect(this.fx.input);
+                    this.instrOut.connect(masterVolume);
+                    
+                    //basefreq, excOct, reso
+                    //outgain.val, drive.val, curveAmount, algoIndex
+                    //rate, feedback
+                    //fdbk.val, delayTime.value(in sec), wetLevel.value, cutoff.value
+                    //wetLevel.value, dryLevel.value 
+                    //threshold.value, makeupGain.value, attack.value, release.value, ratio.value
+                    
+                    this.panValue = 0;
+                    this.panner.setPosition(0, 0, 1);
+                }
+                
+				function Instrument(colorOn, colorOff)
+				{	
+					this.waveform = 3;
+					this.attack = 10;
+					this.decay = 20;
+					this.sustain = 700;
+					this.release = 500;
+                    this.octave = 4;
+                    
+                    this.colorOn = colorOn;
+                    this.colorOff = colorOff;
+                    
+                    this.grid = new Array(16);
+                    for(var i = 0; i<16; i++)
+                    {
+                        this.grid[i] = new Array(256);
+                        for(var j=0; j<256; j++)
+                        {
+                            this.grid[i][j] = false;
+                        }
+                    }
+                    
+                    this.panner = context.createPanner();
+                    this.instrOut = context.createGain();
+                    this.instrOut.gain.value = 1;
+                    
+                    this.fx = new EffectsBus(this.instrOut);
+                    this.panner.connect(this.fx.input);
+                    this.instrOut.connect(masterVolume);
+                    
+                    this.panValue = 0;
+                    this.panner.setPosition(0, 0, 1);
+				}
+                
+                DrumSequencer.prototype.toggleEffect = function(effect)
+				{
+					effect.bypass = !effect.bypass;
+				}
+                
+                DrumSequencer.prototype.play = function(buffer, duration)
+				{
+					playDrum(buffer, duration, this.attack, this.decay, this.sustain, this.release, this.panner);
+				}
+
+				Instrument.prototype.toggleEffect = function(effect)
+				{
+					effect.bypass = !effect.bypass;
+				}
+
+				Instrument.prototype.play = function(semitone, duration)
+				{
+					playSynth(semitone, duration, this.waveform, this.attack, this.decay, this.sustain, this.release, this.panner);
+				}
+
+				var instr1 = new Instrument('#4AC2DB', '#b2e8f4');
+                var instr2 = new Instrument('#F80C0C', '#f29c9c');
+                var instr3 = new Instrument('#F47721', '#ffbb8d');
+                var instr4 = new Instrument('#ADD14F', '#c8e088');
+                var drums = new DrumSequencer('#8658A5', '#b589d3');
+                instr2.octave = 1;
+                instr2.waveform = 0;
+                instr3.octave = 3;
+				instr3.waveform = 2;
+                $('#rootSelector').val(0);
+                $('#keySelector').val(0);
+                
+                var currentInstrument = drums;
+                
+                var scale = [26,24,23,21,19,17,16,14,12,11, 9, 7, 5, 4, 2, 0];  
+                var currentlyPlaying = false;
+                var currentlyRecording = false;
+                var startTime;				// The start time of the entire sequence.
+                var current16thNote;		// What note is currently last scheduled?
+                var tempo = 120.0;			// tempo (in beats per minute)
+                var root = 0;
+                var lookahead = 1.0;		// How frequently to call scheduling function 
+                
+                var scheduleAheadTime = 0.01;	// How far ahead to schedule audio (sec)
+							// This is calculated from lookahead, and overlaps 
+							// with next interval (in case the timer is late)
+                var nextNoteTime = 0.0;		// when the next note is due.
+                var noteResolution = 0;		// 0 == 16th, 1 == 8th, 2 == quarter note
+                var intervalID = 0;			// setInterval identifier.
+                var notesInQueue = [];      // the notes that have been put into the web audio,
+                                            // and may or may not have played yet. {note, time}
+                
+                var currentPage = 0;
+                var visiblePage = 0;
+                var numberOfPages = 1;
+                
+                
+                
+                updateAll();
+
+                function nextNote() {
+                    // Advance current note and time by a 16th note...
+                    var secondsPerBeat = 60.0 / tempo;	// Notice this picks up the CURRENT 
+                                                        // tempo value to calculate beat length.
+                    nextNoteTime += 0.25 * secondsPerBeat;	// Add beat length to last beat time
+                
+                    current16thNote++;	// Advance the beat number, wrap to zero
+                    if (current16thNote == 16) {
+                        currentPage++;
+                        if(currentPage == numberOfPages)
+                        {
+                            currentPage = 0;
+                        }
+                        current16thNote = 0;
+                        updateAll();
+                    }
+                }
+                
+                function scheduleNote( beatNumber, time ) {
+                    // push the note on the queue, even if we're not playing.
+                    notesInQueue.push( { note: beatNumber, time: time } );
+                    for(var i=0; i<16; i++)
+                    {
+                        if(instr1.grid[i][(currentPage*16) +current16thNote])
+                        {
+                            instr1.play(scale[i] + root + ((instr1.octave - 4) * 12), 1000*((60.0/tempo)/8.0));   
+                        }
+                        if(instr2.grid[i][(currentPage*16) +current16thNote])
+                        {
+                            instr2.play(scale[i] + root + ((instr2.octave - 4) * 12), 1000*((60.0/tempo)/8.0));   
+                        }
+                        if(instr3.grid[i][(currentPage*16) +current16thNote])
+						{
+    					instr3.play(scale[i] + root + ((instr3.octave - 4) * 12), 1000*((60.0/tempo)/8.0));   
+						}
+                        if(instr4.grid[i][(currentPage*16) +current16thNote])
+						{
+    					instr4.play(scale[i] + root + ((instr4.octave - 4) * 12), 1000*((60.0/tempo)/8.0));   
+						}
+                        if(drums.grid[i][(currentPage*16) +current16thNote])
+                        {
+                            drums.play(bufferLoader.bufferList[i], 1000*((60.0/tempo)/8.0));   
+                        }
+                        var prevCell = getCellId(i, current16thNote - 1);
+                        if(current16thNote == 0)
+                        {
+                            prevCell = getCellId(i, 15);
+                        }
+                        var currentCell = getCellId(i, current16thNote);
+                        $(prevCell).removeClass('gridSelected');
+                        $(currentCell).addClass('gridSelected');
+                    }
+                }
+                
+                function scheduler() {
+                    // while there are notes that will need to play before the next interval, 
+                    // schedule them and advance the pointer.
+                    while (nextNoteTime < context.currentTime + scheduleAheadTime ) {
+                        scheduleNote( current16thNote, nextNoteTime );
+                        nextNote();
+                    }
+                    timerID = window.setTimeout( scheduler, lookahead );
+                }
+                
+				$( '#playButton' ).click(function(event)
+				{
+                    currentlyPlaying = !currentlyPlaying;
+                        if (currentlyPlaying) { // start playing
+                            current16thNote = 0;
+                            currentPage = 0;
+                            nextNoteTime = context.currentTime;
+                            updateAll();
+                            scheduler();	// kick off scheduling
+                            $( '#playButton' ).val('Stop');
+                            $( '#playButton' ).css("background", "#f80c0c");
+                            $( '#playButton' ).css("border", "3px solid #f80c0c");
+                        } else {
+                            for(var i=0; i<16; i++)
+                            {
+                                for(var j=0; j<16; j++)
+                                {
+                                    var currentCell = getCellId(i, j);
+                                    $(currentCell).removeClass('gridSelected');
+                                }
+                            }
+                            window.clearTimeout( timerID );
+                            $( '#playButton' ).val('Play');
+                            $( '#playButton' ).css("background", "#ADD14F");
+                            $( '#playButton' ).css("border", "3px solid #ADD14F");
+                        }
+                });
+        
+                $( '#recButton' ).click(function(event)
+				{
+                    currentlyRecording = !currentlyRecording;
+                        if (currentlyRecording) { // start playing and recording
+                            $( '#recButton' ).css("background", "#f80c0c");
+                            $( '#recButton' ).css("border", "3px solid #f80c0c");
+                            recorder.clear();
+                            recorder.record();
+                            $( '#playButton' ).click();
+                        } else {
+                            $( '#recButton' ).css("background", "gray");
+                            $( '#recButton' ).css("border", "3px solid gray");
+                            recorder.stop();
+                            createDownloadLink();
+                            recorder.clear();
+                        }
+                });
+                
+                
+                
+                
+                $('#tempoSet').on('input', function(){
+                    tempo = $(this).val();
+                    $( '#playButton' ).click();
+                    $( '#playButton' ).click();
+                });
+                
+                
+                $('#rootSelector').change(function(){
+                    root =  parseInt($('#rootSelector').val());
+                    console.log(root);
+                });
+                
+                $('#keySelector').change(function(){
+                   if( $('#keySelector').val() == 0){
+                       scale = [26,24,23,21,19,17,16,14,12,11,9,7,5,4,2,0];   
+                   }else{
+                       scale = [26,24,22,20,19,17,15,14,12,10,8,7,5,3,2,0]; 
+                   }
+                });
+                
+                $('#instrButton1').click(function(event){
+                    currentInstrument = instr1;
+                    updateAll();
+                });
+                
+                $('#instrButton2').click(function(event){
+                    currentInstrument = instr2;
+                    updateAll();
+                });
+                
+                $('#instrButton3').click(function(event){
+                    currentInstrument = instr3;
+                    updateAll();
+				});
+                
+                $('#instrButton4').click(function(event){
+                    currentInstrument = instr4;
+                    updateAll();
+				});
+
+                $( '#drumButton' ).click(function(event)
+				{
+                    currentInstrument = drums;
+                    updateAll();
+				});
+                
+                function getCellId(i, j)
+                {
+                    var row = i.toString(16);
+                    var col = j.toString(16);
+                    var cellId = '#g' + row + '_' + col; 
+                    return cellId;
+                }
+
+                function updateAll()
+                {
+                    var nowColor = currentInstrument.colorOff;
+//                    change primary ui colours
+                    console.log(currentInstrument);
+                    $.stylesheet('.menuOn', 'border-color', currentInstrument.colorOn);
+                    $.stylesheet('.menuOff', 'border-color', currentInstrument.colorOff);
+                    
+                    $.stylesheet('.gridOn', 'background-color', currentInstrument.colorOn);
+                    $.stylesheet('.gridOn', 'border-color', currentInstrument.colorOn);
+                    $.stylesheet('.gridOff', 'background-color', currentInstrument.colorOff);
+                    $.stylesheet('.gridOff',  'border-color', currentInstrument.colorOff);
+                    $.stylesheet('.gridSelected', 'border-color', currentInstrument.colorOn);
+                    
+                    $.stylesheet('#wahButton', 'background-color', changeColor(nowColor, -20));
+                    $.stylesheet('#wahSettings', 'background-color', changeColor(nowColor,-20));
+                    $.stylesheet('#driveButton', 'background-color', changeColor(nowColor, -40));
+                    $.stylesheet('#driveSettings', 'background-color', changeColor(nowColor, -40));
+                    $.stylesheet('#filterButton', 'background-color', changeColor(nowColor, -60));
+                    $.stylesheet('#filterSettings', 'background-color', changeColor(nowColor, -60));
+                    $.stylesheet('#chorusButton', 'background-color', changeColor(nowColor, -80));
+                    $.stylesheet('#chorusSettings', 'background-color', changeColor(nowColor, -80));
+                    $.stylesheet('#delayButton', 'background-color', changeColor(nowColor, -100));
+                    $.stylesheet('#delaySettings', 'background-color', changeColor(nowColor, -100));
+                    $.stylesheet('#rvbButton', 'background-color', changeColor(nowColor, -120));
+                    $.stylesheet('#rvbSettings', 'background-color', changeColor(nowColor, -120));
+                    $.stylesheet('#compButton', 'background-color', changeColor(nowColor, -140));
+                    $.stylesheet('#compSettings', 'background-color', changeColor(nowColor, -140));
+                    
+                    $.stylesheet('#wahButton', 'border-color', changeColor(nowColor, -20));
+                    $.stylesheet('#wahSettings', 'border-color', changeColor(nowColor, -20));
+                    $.stylesheet('#driveButton', 'border-color', changeColor(nowColor, -40));
+                    $.stylesheet('#driveSettings', 'border-color', changeColor(nowColor, -40));
+                    $.stylesheet('#filterButton', 'border-color', changeColor(nowColor, -60));
+                    $.stylesheet('#filterSettings', 'border-color', changeColor(nowColor, -60));
+                    $.stylesheet('#chorusButton', 'border-color', changeColor(nowColor, -80));
+                    $.stylesheet('#chorusSettings', 'border-color', changeColor(nowColor, -80));
+                    $.stylesheet('#delayButton', 'border-color', changeColor(nowColor, -100));
+                    $.stylesheet('#delaySettings', 'border-color', changeColor(nowColor, -100));
+                    $.stylesheet('#rvbButton', 'border-color', changeColor(nowColor, -120));
+                    $.stylesheet('#rvbSettings', 'border-color', changeColor(nowColor, -120));
+                    $.stylesheet('#compButton', 'border-color', changeColor(nowColor, -140));
+                    $.stylesheet('#compSettings', 'border-color', changeColor(nowColor, -140));
+                    
+                    $('#tempoSet').val(tempo);
+                    $('#rootSelector').val(root);
+                    $('#keySelector').change();
+                    $('#pageSelector').val(currentPage + 1);
+                    
+                    
+//                    set correct ui colours
+                     if (!currentInstrument.fx.wahwah.bypass)
+                    {
+                        $('#filterControls').toggleClass('menuOn', true);
+                        $('#filterControls').toggleClass('menuOff', false);
+                        $.stylesheet('#wahButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#filterControls').toggleClass('menuOn', false);
+                        $('#filterControls').toggleClass('menuOff', true);
+                        $.stylesheet('#wahButton', 'background-color', changeColor(currentInstrument.colorOff, -20));
+                    }
+                    
+                    if (!currentInstrument.fx.overdrive.bypass)
+                    {
+                        $('#filterControls').toggleClass('menuOn', true);
+                        $('#filterControls').toggleClass('menuOff', false);
+                        $.stylesheet('#driveButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#filterControls').toggleClass('menuOn', false);
+                        $('#filterControls').toggleClass('menuOff', true);
+                        $.stylesheet('#driveButton', 'background-color', changeColor(currentInstrument.colorOff, -40));
+                    }
+                    
+                    if (!currentInstrument.fx.filter.bypass)
+                    {
+                        $('#filterControls').toggleClass('menuOn', true);
+                        $('#filterControls').toggleClass('menuOff', false);
+                        $.stylesheet('#filterButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#filterControls').toggleClass('menuOn', false);
+                        $('#filterControls').toggleClass('menuOff', true);
+                        $.stylesheet('#filterButton', 'background-color', changeColor(currentInstrument.colorOff, -60));
+                    }
+                    
+                    if (!currentInstrument.fx.chorus.bypass)
+                    {
+                        $('#filterControls').toggleClass('menuOn', true);
+                        $('#filterControls').toggleClass('menuOff', false);
+                        $.stylesheet('#chorusButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#filterControls').toggleClass('menuOn', false);
+                        $('#filterControls').toggleClass('menuOff', true);
+                        $.stylesheet('#chorusButton', 'background-color', changeColor(currentInstrument.colorOff, -80));
+                    }
+                    
+                    if (!currentInstrument.fx.delay.bypass)
+                    {
+                        $('#filterControls').toggleClass('menuOn', true);
+                        $('#filterControls').toggleClass('menuOff', false);
+                        $.stylesheet('#delayButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#filterControls').toggleClass('menuOn', false);
+                        $('#filterControls').toggleClass('menuOff', true);
+                        $.stylesheet('#delayButton', 'background-color', changeColor(currentInstrument.colorOff, -100));
+                    }
+                    
+                    if (!currentInstrument.fx.convolver.bypass)
+                    {
+                        $('#filterControls').toggleClass('menuOn', true);
+                        $('#filterControls').toggleClass('menuOff', false);
+                        $.stylesheet('#rvbButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#filterControls').toggleClass('menuOn', false);
+                        $('#filterControls').toggleClass('menuOff', true);
+                        $.stylesheet('#rvbButton', 'background-color', changeColor(currentInstrument.colorOff, -120));
+                    }
+                    
+                    if (!currentInstrument.fx.compressor.bypass)
+                    {
+                        $('#filterControls').toggleClass('menuOn', true);
+                        $('#filterControls').toggleClass('menuOff', false);
+                        $.stylesheet('#compButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#filterControls').toggleClass('menuOn', false);
+                        $('#filterControls').toggleClass('menuOff', true);
+                        $.stylesheet('#compButton', 'background-color', changeColor(currentInstrument.colorOff, -140));
+                    }
+                    
+                    //set correct grid states
+                    for(var i=0; i<16; i++)
+                    {
+                        for(var j=currentPage*16; j<((currentPage*16)+16); j++)
+                        {
+                            var cellId = getCellId(i,(j - (currentPage*16)));
+                            if(currentInstrument.grid[i][j] == false)
+                            {
+                                $(cellId).addClass('gridOff').removeClass('gridOn');
+                            }
+                            else
+                            {
+                                console.log(cellId);
+                                $(cellId).addClass('gridOn').removeClass('gridOff');
+                            }
+                        }
+                    }
+                    
+//                    set correct silder positions
+                    $('#waveSelector').val(currentInstrument.waveform);
+                    $('#octaveSelector').val(currentInstrument.octave);
+                    $('#instrAttack').val(currentInstrument.attack);
+                    $('#instrDecay').val(currentInstrument.decay);
+                    $('#instrSustain').val(currentInstrument.sustain);
+                    $('#instrRelease').val(currentInstrument.release);
+                    $('#instrVolume').val(currentInstrument.instrOut.gain.value*1000);
+                    $('#instrPan').val(currentInstrument.panValue);
+                    
+                    $('#wahBaseFrequency').val(currentInstrument.fx.wahwah.baseFrequency);
+                    console.log(currentInstrument.fx.wahwah.baseFrequency);
+                    $('#wahExcursionOctaves').val(currentInstrument.fx.wahwah.excursionOctaves);
+                    console.log(currentInstrument.fx.wahwah.excursionOctaves);
+                    $('#wahResonance').val(currentInstrument.fx.wahwah.resonance);
+                    console.log(currentInstrument.fx.wahwah.resonance);
+                   
+                    
+                    $('#overdriveDrive').val(currentInstrument.fx.overdrive.drive.value);
+                    console.log(currentInstrument.fx.overdrive.drive.value);
+                    $('#overdriveCurveAmount').val(currentInstrument.fx.overdrive.curveAmount);
+                    console.log(currentInstrument.fx.overdrive.curveAmount);
+                    $('#overdriveGain').val(currentInstrument.fx.overdrive.outputGain.value);
+                    console.log(currentInstrument.fx.overdrive.outputGain.value);
+                    $('#overdriveAlgorithmIndex').val(currentInstrument.fx.overdrive.algorithmIndex);
+                    console.log(currentInstrument.fx.overdrive.algorithmIndex);
+                    
+                    
+                    $('#outputGain').val(currentInstrument.fx.filter.frequency.value);
+                    console.log(currentInstrument.fx.filter.frequency.value);
+                    $('#filterQ').val(currentInstrument.fx.filter.Q.value);
+                    console.log(currentInstrument.fx.filter.Q.value);
+                    $('#filterGain').val(currentInstrument.fx.filter.gain.value);
+                    console.log(currentInstrument.fx.filter.gain.value);
+                    $('#filterTypeSelector').val(currentInstrument.fx.filter.filter.type);
+                    console.log(currentInstrument.fx.filter.filter.type);
+                    
+                    $('#chorusRate').val(currentInstrument.fx.chorus.rate);
+                    console.log(currentInstrument.fx.chorus.rate);
+                    $('#chorusFeedback').val(currentInstrument.fx.chorus.feedback);
+                    console.log(currentInstrument.fx.chorus.feedback);
+                
+                    
+                    
+                    $('#delayTime').val(currentInstrument.fx.delay.delayTime.value);
+                    console.log(currentInstrument.fx.delay.delayTime.value);
+                    $('#delayFeedback').val(currentInstrument.fx.delay.feedback.value);
+                    console.log(currentInstrument.fx.delay.feedback.value);
+                    $('#delayWetLevel').val(currentInstrument.fx.delay.wetLevel.value);
+                    console.log(currentInstrument.fx.delay.wetLevel.value);
+                    $('#delayDryLevel').val(currentInstrument.fx.delay.dryLevel.value);
+                    console.log(currentInstrument.fx.delay.dryLevel.value);
+                    $('#delayTypeSelector').val(currentInstrument.fx.delay.cutoff.value);
+                    console.log(currentInstrument.fx.delay.cutoff.value);
+                    
+                    
+                    $('#reverbWetLevel').val(currentInstrument.fx.convolver.wetLevel.value);
+                    console.log(currentInstrument.fx.convolver.wetLevel.value);
+                    $('#reverbDryLevel').val(currentInstrument.fx.convolver.dryLevel.value);
+                    console.log(currentInstrument.fx.convolver.dryLevel.value);
+                    
+                    
+                    $('#compressorThreshold').val(currentInstrument.fx.compressor.threshold.value);
+                    console.log(currentInstrument.fx.compressor.threshold.value);
+                    $('#compressorRatio').val(currentInstrument.fx.compressor.ratio.value);
+                    console.log(currentInstrument.fx.compressor.ratio.value);
+                    $('#compressorAttack').val(currentInstrument.fx.compressor.attack.value);
+                    console.log(currentInstrument.fx.compressor.attack.value);
+                    $('#compressorRelease').val(currentInstrument.fx.compressor.release.value);
+                    console.log(currentInstrument.fx.compressor.release.value);
+                    $('#compressorMakeUpGain').val(currentInstrument.fx.compressor.makeupGain.value);
+                    console.log(currentInstrument.fx.compressor.makeupGain.value);
+                }
+                
+                
+                $('#instrOptions').click(function(event)
+				{
+					$('#instrumentControls').fadeToggle(500);
+				});
+                
+                $('#waveSelector').change(function(event)
+                {
+                    currentInstrument.waveform = parseInt($(this).val());
+                });
+                
+                $('#octaveSelector').change(function(event)
+                {
+                    currentInstrument.octave = parseInt($(this).val());
+                });
+                
+                $('#instrAttack').on('input', function()
+                  {
+                      var attack = $(this).val();
+                      currentInstrument.attack = attack;
+                  });
+                
+                $('#instrDecay').on('input', function()
+                  {
+                      var decay = $(this).val();
+                      currentInstrument.decay = decay;
+                  });
+                
+                $('#instrSustain').on('input', function()
+                  {
+                      var sustain = $(this).val();
+                      currentInstrument.sustain = sustain;
+                  });
+                
+                $('#instrRelease').on('input', function()
+                  {
+                      var release = $(this).val();
+                      currentInstrument.release = release;
+                  });
+                $('#instrVolume').on('input', function()
+                  {
+                      var volume = $(this).val();
+                      currentInstrument.instrOut.gain.value = volume/1000;
+                  });
+    
+                $('#instrPan').on('input', function()
+                  {
+                      var pan = $(this).val();
+                      currentInstrument.panValue = pan;
+                      var xDeg = parseInt(pan);
+                      var zDeg = xDeg + 90;
+                      if (zDeg > 90) {
+                        zDeg = 180 - zDeg;
+                      }
+                      var x = Math.sin(xDeg * (Math.PI / 180));
+                      var z = Math.sin(zDeg * (Math.PI / 180));
+                      currentInstrument.panner.setPosition(x, 0, z);
+                  });
+                
+                //                WAHWAH 
+                 $('#wahButton').click(function(event)
+				{
+					currentInstrument.toggleEffect(currentInstrument.fx.wahwah);
+                    if (!currentInstrument.fx.wahwah.bypass)
+                    {
+                        $('#wahControls').toggleClass('menuOn', true);
+                        $('#wahControls').toggleClass('menuOff', false);
+                        $.stylesheet('#wahButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#wahControls').toggleClass('menuOn', false);
+                        $('#wahControls').toggleClass('menuOff', true);
+                        $.stylesheet('#wahButton', 'background-color', changeColor(currentInstrument.colorOff, -20));
+                    }
+				});
+                
+                $('#wahSettings').click(function(event)
+				{
+                    $('#driveControls').fadeOut(500);
+                    $('#filterControls').fadeOut(500);
+                    $('#chorusControls').fadeOut(500);
+                    $('#delayControls').fadeOut(500);
+                    $('#reverbControls').fadeOut(500);
+                    $('#compressorControls').fadeOut(500);
+                    
+					$('#wahControls').fadeToggle(500);
+				});
+                
+                $('#closeWahControls').click(function(event)
+				{
+					$('#wahControls').fadeOut(500);
+				});                
+                
+                
+                $('#wahBaseFrequency').on('input', function()
+                {
+                      var bfreq = $(this).val();
+                      currentInstrument.fx.wahwah.baseFrequency = bfreq;
+                });
+                
+                $('#wahExcursionOctaves').on('input', function()
+                {
+                      var oct = $(this).val();
+                      currentInstrument.fx.wahwah.excursionOctaves = oct;
+                });
+                
+                $('#wahResonance').on('input', function()
+                {
+                      var reso = $(this).val();
+                      currentInstrument.fx.wahwah.resonance = reso;
+                });
+                
+//                DRIVE
+                $('#driveButton').click(function(event)
+				{
+					currentInstrument.toggleEffect(currentInstrument.fx.overdrive);
+                    if (!currentInstrument.fx.overdrive.bypass)
+                    {
+                        $('#driveControls').toggleClass('menuOn', true);
+                        $('#driveControls').toggleClass('menuOff', false);
+                        $.stylesheet('#driveButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#driveControls').toggleClass('menuOn', false);
+                        $('#driveControls').toggleClass('menuOff', true);
+                        $.stylesheet('#driveButton', 'background-color', changeColor(currentInstrument.colorOff, -40));
+                    }
+				});
+                
+                $('#driveSettings').click(function(event)
+				{
+                    $('#wahControls').fadeOut(500);
+                    $('#filterControls').fadeOut(500);
+                    $('#chorusControls').fadeOut(500);
+                    $('#delayControls').fadeOut(500);
+                    $('#reverbControls').fadeOut(500);
+                    $('#compressorControls').fadeOut(500);
+                    
+					$('#driveControls').fadeToggle(500);
+				});
+                
+                $('#closeDriveControls').click(function(event)
+				{
+					$('#driveControls').fadeOut(500);
+				});   
+                
+                
+                $('#overdriveDrive').on('input', function()
+                  {
+                      var mydrive = $(this).val();
+                      currentInstrument.fx.overdrive.drive.value = mydrive;
+                  });
+                
+                $('#overdriveCurveAmount').on('input', function()
+                  {
+                      curve = $(this).val();
+                      currentInstrument.fx.overdrive.curveAmount = curve;
+                  });
+                
+                $('#overdriveGain').on('input', function(){
+                      var gain = $(this).val();
+                      currentInstrument.fx.overdrive.outputGain.value = gain;
+                  });
+                
+                $('#overdriveAlgorithmSelector').change(function(){
+                    var number =  $('#overdriveAlgorithmSelector').val();
+                    currentInstrument.fx.overdrive.algorithmIndex = parseInt(number);
+                });
+
+                
+//                FILTER
+				$('#filterButton').click(function(event)
+				{
+					currentInstrument.toggleEffect(currentInstrument.fx.filter);
+                    if (!currentInstrument.fx.filter.bypass)
+                    {
+                        $('#filterControls').toggleClass('menuOn', true);
+                        $('#filterControls').toggleClass('menuOff', false);
+                        $.stylesheet('#filterButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#filterControls').toggleClass('menuOn', false);
+                        $('#filterControls').toggleClass('menuOff', true);
+                        $.stylesheet('#filterButton', 'background-color', changeColor(currentInstrument.colorOff, -60));
+                    }
+				});
+                
+                
+                $('#filterSettings').click(function(event)
+				{
+                    $('#wahControls').fadeOut(500);
+                    $('#driveControls').fadeOut(500);
+                    $('#chorusControls').fadeOut(500);
+                    $('#delayControls').fadeOut(500);
+                    $('#reverbControls').fadeOut(500);
+                    $('#compressorControls').fadeOut(500);
+                    
+					$('#filterControls').fadeToggle(500);
+				});
+                
+                $('#closeFilterControls').click(function(event)
+				{
+					$('#filterControls').fadeOut(500);
+				});                
+                
+                
+                
+                $('#filterCutOff').on('input', function()
+                  {
+                      var freq = $(this).val();
+                      currentInstrument.fx.filter.frequency.value = freq;
+                  });
+                
+                $('#filterQ').on('input', function()
+                  {
+                      q = $(this).val();
+                      currentInstrument.fx.filter.Q.value = q;
+                  });
+                
+                $('#filterGain').on('input', function(){
+                      var gain = $(this).val();
+                      currentInstrument.fx.filter.gain.value = gain;
+                  });
+                
+                function getFilterTypeNumber(str)
+                {
+                    var val = 0;
+                    switch(str)
+                    {
+                            case 'lowpass': val = 0; break;
+                            case 'highpass': val = 1; break;
+                            case 'bandpass': val = 2; break;
+                            case 'lowshelf': val = 3; break;
+                            case 'highshelf': val = 4; break;
+                            case 'peaking': val = 5; break;
+                            case 'notch': val = 6; break;
+                            case 'allpass': val = 7; break;
+                            default:  break;
+                    }
+                    return val;
+                }
+                
+                $('#filterTypeSelector').change(function(){
+                    var type =  $('#filterTypeSelector').val();
+                    currentInstrument.fx.filter.filter.type = getFilterTypeNumber(type);
+                });
+                
+                //CHORUS
+                
+                $('#chorusButton').click(function(event)
+				{
+					currentInstrument.toggleEffect(currentInstrument.fx.chorus);
+                    if (!currentInstrument.fx.chorus.bypass)
+                    {
+                        $('#chorusControls').toggleClass('menuOn', true);
+                        $('#chorusControls').toggleClass('menuOff', false);
+                        $.stylesheet('#chorusButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#chorusControls').toggleClass('menuOn', false);
+                        $('#chorusControls').toggleClass('menuOff', true);
+                        $.stylesheet('#chorusButton', 'background-color', changeColor(currentInstrument.colorOff, -80));
+                    }
+				});
+                
+                $('#chorusSettings').click(function(event)
+				{
+                    $('#wahControls').fadeOut(500);
+                    $('#driveControls').fadeOut(500);
+                    $('#filterControls').fadeOut(500);
+                    $('#delayControls').fadeOut(500);
+                    $('#reverbControls').fadeOut(500);
+                    $('#compressorControls').fadeOut(500);
+                    
+					$('#chorusControls').fadeToggle(500);
+				});
+                
+                $('#closeChorusControls').click(function(event)
+				{
+					$('#chorusControls').fadeOut(500);
+				}); 
+                
+                
+                $('#chorusRate').on('input', function()
+                  {
+                      var rate = $(this).val();
+                      currentInstrument.fx.chorus.rate = rate;
+                  });
+                
+                $('#chorusFeedback').on('input', function()
+                  {
+                      var fbck = $(this).val();
+                      currentInstrument.fx.chorus.feedback = fbck;
+                  });
+                
+                //DELAY
+                
+                $('#delayButton').click(function(event)
+				{
+					currentInstrument.toggleEffect(currentInstrument.fx.delay);
+                    if (!currentInstrument.fx.delay.bypass)
+                    {
+                        $('#delayControls').toggleClass('menuOn', true);
+                        $('#delayControls').toggleClass('menuOff', false);
+                        $.stylesheet('#delayButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#delayControls').toggleClass('menuOn', false);
+                        $('#delayControls').toggleClass('menuOff', true);
+                        $.stylesheet('#delayButton', 'background-color', changeColor(currentInstrument.colorOff, -100));
+                    }
+				});
+                
+                $('#delaySettings').click(function(event)
+				{
+                    $('#wahControls').fadeOut(500);
+                    $('#driveControls').fadeOut(500);
+                    $('#filterControls').fadeOut(500);
+                    $('#chorusControls').fadeOut(500);
+                    $('#reverbControls').fadeOut(500);
+                    $('#compressorControls').fadeOut(500);
+                    
+					$('#delayControls').fadeToggle(500);
+				});
+                
+                $('#closeDelayControls').click(function(event)
+				{
+					$('#delayControls').fadeOut(500);
+				}); 
+                
+                
+                $('#delayTime').on('input', function()
+                  {
+                      var time = $(this).val();
+                      currentInstrument.fx.delay.delayTime.value = time;
+                  });
+                
+                $('#delayFeedback').on('input', function()
+                  {
+                      var fbck = $(this).val();
+                      currentInstrument.fx.delay.feedback.value = fbck;
+                  });
+                
+                
+                $('#delayWetLevel').on('input', function()
+                  {
+                      var wetlvl = $(this).val();
+                      currentInstrument.fx.delay.wetLevel.value = wetlvl;
+                  });
+                
+                $('#delayDryLevel').on('input', function()
+                  {
+                      var drylvl = $(this).val();
+                      currentInstrument.fx.delay.dryLevel.value = drylvl;
+                  });
+                
+                $('#delayTypeSelector').change(function(){
+                    var type =  $('#delayTypeSelector').val();
+                    console.log(type);
+                    currentInstrument.fx.delay.cutoff.value = parseInt(type);
+                });
+                
+                //REVERB
+                
+                $('#rvbButton').click(function(event)
+				{
+					currentInstrument.toggleEffect(currentInstrument.fx.convolver);
+                    if (!currentInstrument.fx.convolver.bypass)
+                    {
+                        $('#rvbControls').toggleClass('menuOn', true);
+                        $('#rvbControls').toggleClass('menuOff', false);
+                        $.stylesheet('#rvbButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#rvbControls').toggleClass('menuOn', false);
+                        $('#rvbControls').toggleClass('menuOff', true);
+                        $.stylesheet('#rvbButton', 'background-color', changeColor(currentInstrument.colorOff, -120));
+                    }
+				});
+                
+                $('#rvbSettings').click(function(event)
+				{
+                    $('#wahControls').fadeOut(500);
+                    $('#driveControls').fadeOut(500);
+                    $('#filterControls').fadeOut(500);
+                    $('#chorusControls').fadeOut(500);
+                    $('#delayControls').fadeOut(500);
+                    $('#compressorControls').fadeOut(500);
+                    
+					$('#reverbControls').fadeToggle(500);
+				});
+                
+                $('#closeReverbControls').click(function(event)
+				{
+					$('#reverbControls').fadeOut(500);
+				});
+                
+                
+                $('#reverbWetLevel').on('input', function()
+                {
+                      var wetlvl = $(this).val();
+                      currentInstrument.fx.convolver.wetLevel.value = wetlvl;
+                });
+                
+                $('#reverbDryLevel').on('input', function()
+                  {
+                      var drylvl = $(this).val();
+                      currentInstrument.fx.convolver.dryLevel.value = drylvl;
+                });
+                
+                //COMPRESSOR
+                
+                $('#compButton').click(function(event)
+				{
+					currentInstrument.toggleEffect(currentInstrument.fx.compressor);
+                    if (!currentInstrument.fx.compressor.bypass)
+                    {
+                        $('#compControls').toggleClass('menuOn', true);
+                        $('#compControls').toggleClass('menuOff', false);
+                        $.stylesheet('#compButton', 'background-color', currentInstrument.colorOff);
+                    } 
+                    else
+                    {
+                        $('#compControls').toggleClass('menuOn', false);
+                        $('#compControls').toggleClass('menuOff', true);
+                        $.stylesheet('#compButton', 'background-color', changeColor(currentInstrument.colorOff, -140));
+                    }
+				});
+                
+                $('#compSettings').click(function(event)
+				{
+                    $('#wahControls').fadeOut(500);
+                    $('#driveControls').fadeOut(500);
+                    $('#filterControls').fadeOut(500);
+                    $('#chorusControls').fadeOut(500);
+                    $('#delayControls').fadeOut(500);
+                    $('#reverbControls').fadeOut(500);
+                    
+					$('#compressorControls').fadeToggle(500);
+				});
+                
+                $('#closeCompressorControls').click(function(event)
+				{
+					$('#compressorControls').fadeOut(500);
+				}); 
+                
+                $('#compressorThreshold').on('input', function()
+                  {
+                      var thres = $(this).val();
+                      currentInstrument.fx.compressor.threshold.value = thres;
+                  });
+                
+                $('#compressorRatio').on('input', function()
+                  {
+                      var ratio = $(this).val();
+                      currentInstrument.fx.compressor.ratio.value = ratio;
+                  });
+                
+                $('#compressorAttack').on('input', function()
+                  {
+                      var att = $(this).val();
+                      currentInstrument.fx.compressor.attack.value = att;
+                  });
+                
+                $('#compressorRelease').on('input', function()
+                  {
+                      var rel = $(this).val();
+                      currentInstrument.fx.compressor.release.value = rel;
+                  });
+                
+                $('#compressorMakeUpGain').on('input', function()
+                  {
+                      var makeup = $(this).val();
+                      currentInstrument.fx.compressor.makeupGain.value = makeup;
+                  });
+                
+                //GRID
+                
+                $('.grid').click(function(event){
+                    var name = event.target.id.split('');
+                    var row = parseInt(name[1], 16);
+                    var col = parseInt(name[3], 16);
+                    currentInstrument.grid[row][col + (currentPage*16)] = !currentInstrument.grid[row][col + (currentPage*16)];
+                    if($(event.target).hasClass('gridOn'))
+                    {
+                        $(event.target).removeClass('gridOn');
+                        $(event.target).addClass('gridOff');
+                    }
+                    else
+                    {
+                        $(event.target).removeClass('gridOff');
+                        $(event.target).addClass('gridOn');
+                    }
+                });
+                
+                function exportInstrument(instr)
+                {
+                    var out = instr.waveform + '_' 
+                    + instr.attack + '_' 
+                    + instr.decay + '_' 
+                    + instr.sustain + '_' 
+                    + instr.release + '_' 
+                    + instr.octave + '_';
+                    for(i=0;i<16;i++)
+                    {
+                        for(j=0;j<256;j++)
+                        {
+                            out += instr.grid[i][j]  + '_';
+                        }
+                    }
+                    //WAH
+                    out += instr.fx.wahwah.baseFrequency + '_' 
+                    + instr.fx.wahwah.excursionOctaves + '_'
+                    + instr.fx.wahwah.resonance + '_'
+                    + instr.fx.wahwah.bypass + '_'
+                    //DRIVE
+                    + instr.fx.overdrive.outputGain.value.toString() + '_' 
+                    + instr.fx.overdrive.drive.value.toString() + '_'
+                    + instr.fx.overdrive.curveAmount.toString() + '_'
+                    + instr.fx.overdrive.algorithmIndex.toString() + '_'
+                    + instr.fx.overdrive.bypass + '_'
+                    //FILTER
+                    + instr.fx.filter.filter.type + '_' 
+                    + instr.fx.filter.frequency.value + '_' 
+                    + instr.fx.filter.Q.value + '_' 
+                    + instr.fx.filter.gain.value + '_'
+                    + instr.fx.filter.bypass + '_'
+                    //CHORUS
+                    + instr.fx.chorus.rate + '_'
+                    + instr.fx.chorus.feedback + '_'
+                    + instr.fx.chorus.bypass  + '_'
+                    //DELAY
+                    + instr.fx.delay.feedback.value + '_'
+                    + instr.fx.delay.delayTime.value + '_'
+                    + instr.fx.delay.wetLevel.value + '_'   
+                    + instr.fx.delay.cutoff.value + '_'
+                    + instr.fx.delay.bypass + '_'
+                    //RVB
+                    + instr.fx.convolver.dryLevel.value + '_'
+                    + instr.fx.convolver.wetLevel.value + '_'
+                    + instr.fx.convolver.bypass + '_'
+                    //COMP
+                    + instr.fx.compressor.threshold.value + '_'
+                    + instr.fx.compressor.makeupGain.value + '_'
+                    + instr.fx.compressor.attack.value + '_'
+                    + instr.fx.compressor.release.value + '_'
+                    + instr.fx.compressor.ratio.value + '_'
+                    + instr.fx.compressor.bypass + '_'
+                    //PAN
+                    + instr.panValue + '_' 
+                    //OUTPUT
+                    + instr.instrOut.gain.value + '_';
+                    return out;
+                }
+                
+                function exportDrums(instr)
+                {
+                    var out = instr.attack + '_' 
+                    + instr.decay + '_' 
+                    + instr.sustain + '_' 
+                    + instr.release + '_';
+                    for(i=0;i<16;i++)
+                    {
+                        for(j=0;j<256;j++)
+                        {
+                            out += instr.grid[i][j]  + '_';
+                        }
+                    }
+                    //WAH
+                    out += instr.fx.wahwah.baseFrequency + '_' 
+                    + instr.fx.wahwah.excursionOctaves + '_'
+                    + instr.fx.wahwah.resonance + '_'
+                    + instr.fx.wahwah.bypass + '_'
+                    //DRIVE
+                    + instr.fx.overdrive.outputGain.value.toString() + '_' 
+                    + instr.fx.overdrive.drive.value.toString() + '_'
+                    + instr.fx.overdrive.curveAmount.toString() + '_'
+                    + instr.fx.overdrive.algorithmIndex.toString() + '_'
+                    + instr.fx.overdrive.bypass + '_'
+                    //FILTER
+                    + instr.fx.filter.filter.type + '_' 
+                    + instr.fx.filter.frequency.value + '_' 
+                    + instr.fx.filter.Q.value + '_' 
+                    + instr.fx.filter.gain.value + '_'
+                    + instr.fx.filter.bypass + '_'
+                    //CHORUS
+                    + instr.fx.chorus.rate + '_'
+                    + instr.fx.chorus.feedback + '_'
+                    + instr.fx.chorus.bypass  + '_'
+                    //DELAY
+                    + instr.fx.delay.feedback.value + '_'
+                    + instr.fx.delay.delayTime.value + '_'
+                    + instr.fx.delay.wetLevel.value + '_'   
+                    + instr.fx.delay.cutoff.value + '_'
+                    + instr.fx.delay.bypass + '_'
+                    //RVB
+                    + instr.fx.convolver.dryLevel.value + '_'
+                    + instr.fx.convolver.wetLevel.value + '_'
+                    + instr.fx.convolver.bypass + '_'
+                    //COMP
+                    + instr.fx.compressor.threshold.value + '_'
+                    + instr.fx.compressor.makeupGain.value + '_'
+                    + instr.fx.compressor.attack.value + '_'
+                    + instr.fx.compressor.release.value + '_'
+                    + instr.fx.compressor.ratio.value + '_'
+                    + instr.fx.compressor.bypass + '_'
+                    //PAN
+                    + instr.panValue + '_' 
+                    //OUTPUT
+                    + instr.instrOut.gain.value + '_';
+                    return out;
+                }
+                
+                function importInstrument(instr,input,start)
+                {
+                    instr.waveform = parseInt(input[start]);
+                    console.log('wf is now ' + instr.waveform);
+                    instr.attack = parseInt(input[start+1]);
+                    console.log('a is now ' + instr.attack);
+                    instr.decay = parseInt(input[start+2]);
+                    console.log('d is now ' + instr.decay);
+                    instr.sustain = parseInt(input[start+3]);
+                    console.log('s is now ' + instr.sustain);
+                    instr.release = parseInt(input[start+4]);
+                    console.log('r is now ' + instr.release);
+                    instr.octave = parseInt(input[start+5]);
+                    console.log('oct is now ' + instr.octave);
+                    var begin = start + 6;
+                    var count = 0;
+                    for(i=0;i<16;i++)
+                    {
+                        for(j=0;j<256;j++)
+                        {
+                            instr.grid[i][j] = Boolean.parse(input[begin+j+(i*256)]);
+                            count++;
+                        }
+                    }
+                    console.log(count + ' cells done');
+                    count += begin;
+                    console.log(input[count]);
+                    //WAH
+                    instr.fx.wahwah.baseFrequency = parseFloat(input[count]);
+                    instr.fx.wahwah.excursionOctaves = parseInt(input[count+1]);
+                    instr.fx.wahwah.resonance = parseInt(input[count+2]);
+                    instr.fx.wahwah.bypass = Boolean.parse(input[count+3]);
+                    //DRIVE
+                    instr.fx.overdrive.outputGain.value = parseFloat(input[count+4]);
+                    instr.fx.overdrive.drive.value = parseFloat(input[count+5]);
+                    instr.fx.overdrive.curveAmount = parseFloat(input[count+6]);
+                    instr.fx.overdrive.algorithmIndex = parseInt(input[count+7]);
+                    instr.fx.overdrive.bypass = Boolean.parse(input[count+8]);
+                    //FILTER
+                    instr.fx.filter.filter.type = parseInt(getFilterTypeNumber(input[count+9]));
+                    instr.fx.filter.frequency.value = parseInt(input[count+10]); 
+                    instr.fx.filter.Q.value = parseInt(input[count+11]);
+                    instr.fx.filter.gain.value = parseFloat(input[count+12]);
+                    instr.fx.filter.bypass = Boolean.parse(input[count+13]);
+                    //CHORUS
+                    instr.fx.chorus.rate = parseFloat(input[count+14]);
+                    instr.fx.chorus.feedback = parseFloat(input[count+15]);
+                    instr.fx.chorus.bypass = Boolean.parse(input[count+16]);
+                    //DELAY
+                    instr.fx.delay.feedback.value = parseFloat(input[count+17]);
+                    instr.fx.delay.delayTime.value = parseFloat(input[count+18]);
+                    instr.fx.delay.wetLevel.value = parseFloat(input[count+19]); 
+                    instr.fx.delay.cutoff.value = parseInt(input[count+20]);
+                    instr.fx.delay.bypass = Boolean.parse(input[count+21]);
+                    //RVB
+                    instr.fx.convolver.dryLevel.value = parseFloat(input[count+22]);
+                    instr.fx.convolver.wetLevel.value = parseFloat(input[count+23]);
+                    instr.fx.convolver.bypass = Boolean.parse(input[count+24]);
+                    //COMP
+                    instr.fx.compressor.threshold.value = parseInt(input[count+25]);
+                    instr.fx.compressor.makeupGain.value = parseFloat(input[count+26]);
+                    instr.fx.compressor.attack.value = parseFloat(input[count+27]);
+                    instr.fx.compressor.release.value = parseFloat(input[count+28]);
+                    instr.fx.compressor.ratio.value = parseFloat(input[count+29]);
+                    instr.fx.compressor.bypass = Boolean.parse(input[count+30]);
+                    //PAN
+                    instr.panValue = parseInt(input[count+31]);
+                    //OUTPUT
+                    instr.instrOut.gain.value = parseFloat(input[count+32]);;
+                    
+                    var xDeg = instr.panValue;
+                    var zDeg = xDeg + 90;
+                    if (zDeg > 90) {
+                        zDeg = 180 - zDeg;
+                    }
+                    var x = Math.sin(xDeg * (Math.PI / 180));
+                    var z = Math.sin(zDeg * (Math.PI / 180));
+                    instr.panner.setPosition(x, 0, z);
+                    
+                    console.log(input[count+33]);
+                    return count+33;
+                }
+                
+                function importDrums(instr,input,start)
+                {
+                    instr.attack = parseInt(input[start]);
+                    console.log('a is now ' + instr.attack);
+                    instr.decay = parseInt(input[start+1]);
+                    console.log('d is now ' + instr.decay);
+                    instr.sustain = parseInt(input[start+2]);
+                    console.log('s is now ' + instr.sustain);
+                    instr.release = parseInt(input[start+3]);
+                    console.log('r is now ' + instr.release);
+                    var begin = start + 4;
+                    var count = 0;
+                    for(i=0;i<16;i++)
+                    {
+                        for(j=0;j<256;j++)
+                        {
+                            instr.grid[i][j] = Boolean.parse(input[begin+j+(i*256)]);
+                            count++;
+                        }
+                    }
+                    console.log(count + ' cells done');
+                    count += begin;
+                    console.log(input[count]);
+                    //WAH
+                    instr.fx.wahwah.baseFrequency = parseFloat(input[count]);
+                    instr.fx.wahwah.excursionOctaves = parseInt(input[count+1]);
+                    instr.fx.wahwah.resonance = parseInt(input[count+2]);
+                    instr.fx.wahwah.bypass = Boolean.parse(input[count+3]);
+                    //DRIVE
+                    instr.fx.overdrive.outputGain.value = parseFloat(input[count+4]);
+                    instr.fx.overdrive.drive.value = parseFloat(input[count+5]);
+                    instr.fx.overdrive.curveAmount = parseFloat(input[count+6]);
+                    instr.fx.overdrive.algorithmIndex = parseInt(input[count+7]);
+                    instr.fx.overdrive.bypass = Boolean.parse(input[count+8]);
+                    //FILTER
+                    instr.fx.filter.filter.type = parseInt(getFilterTypeNumber(input[count+9]));
+                    instr.fx.filter.frequency.value = parseInt(input[count+10]); 
+                    instr.fx.filter.Q.value = parseInt(input[count+11]);
+                    instr.fx.filter.gain.value = parseFloat(input[count+12]);
+                    instr.fx.filter.bypass = Boolean.parse(input[count+13]);
+                    //CHORUS
+                    instr.fx.chorus.rate = parseFloat(input[count+14]);
+                    instr.fx.chorus.feedback = parseFloat(input[count+15]);
+                    instr.fx.chorus.bypass = Boolean.parse(input[count+16]);
+                    //DELAY
+                    instr.fx.delay.feedback.value = parseFloat(input[count+17]);
+                    instr.fx.delay.delayTime.value = parseFloat(input[count+18]);
+                    instr.fx.delay.wetLevel.value = parseFloat(input[count+19]); 
+                    instr.fx.delay.cutoff.value = parseInt(input[count+20]);
+                    instr.fx.delay.bypass = Boolean.parse(input[count+21]);
+                    //RVB
+                    instr.fx.convolver.dryLevel.value = parseFloat(input[count+22]);
+                    instr.fx.convolver.wetLevel.value = parseFloat(input[count+23]);
+                    instr.fx.convolver.bypass = Boolean.parse(input[count+24]);
+                    //COMP
+                    instr.fx.compressor.threshold.value = parseInt(input[count+25]);
+                    instr.fx.compressor.makeupGain.value = parseFloat(input[count+26]);
+                    instr.fx.compressor.attack.value = parseFloat(input[count+27]);
+                    instr.fx.compressor.release.value = parseFloat(input[count+28]);
+                    instr.fx.compressor.ratio.value = parseFloat(input[count+29]);
+                    instr.fx.compressor.bypass = Boolean.parse(input[count+30]);
+                    //PAN
+                    instr.panValue = parseInt(input[count+31]);
+                    //OUTPUT
+                    instr.instrOut.gain.value = parseFloat(input[count+32]);;
+                    
+                    var xDeg = instr.panValue;
+                    var zDeg = xDeg + 90;
+                    if (zDeg > 90) {
+                        zDeg = 180 - zDeg;
+                    }
+                    var x = Math.sin(xDeg * (Math.PI / 180));
+                    var z = Math.sin(zDeg * (Math.PI / 180));
+                    instr.panner.setPosition(x, 0, z);
+                    
+                    console.log(input[count+33]);
+                    return count+33;
+                }
+                
+                $('#importExport').click(function(){
+                    var output = tempo + '_'
+                    + root + '_'
+                    + $('#keySelector').val() + '_' 
+                    + numberOfPages + '_' 
+                    + exportInstrument(instr1) 
+                    + exportInstrument(instr2)
+                    + exportInstrument(instr3)
+                    + exportInstrument(instr4)
+                    + exportDrums(drums);
+                    $('#importText').val(output);
+                    $('#importExportPanel').fadeToggle(500);
+                });
+                                    
+                $('#import').click(function(){
+                    var inp = $('#importText').val();
+                    var input = inp.split("_");
+                    tempo = parseInt(input[0]);
+                    console.log('tempo is now ' + tempo);
+                    root = parseInt(input[1]);
+                    console.log('root is now ' + root);
+                    $('#keySelector').val(parseInt(input[2]));
+                    console.log('key is now ' + $('#keySelector').val());
+                    numberOfPages = parseInt(input[3]);
+                    $('#numberOfPagesSelector').val(numberOfPages);
+                    $('#numberOfPagesSelector').change();
+                    var next = importInstrument(instr1, input, 4);
+                    next = importInstrument(instr2, input, next);
+                    next = importInstrument(instr3, input, next);
+                    next = importInstrument(instr4, input, next);
+                    next = importDrums(drums, input, next);
+                    updateAll();
+                    $('#importExportPanel').fadeOut(500);
+                });
+                
+                $('#load').click(function(){
+                    $.ajax({ 'url':'presets/' + $('#presetSelector').val(),
+                        'success': function(r){
+                            $('#importText').val(r);
+                        }
+                    });
+//                    $('#import').click();
+                });
+                
+                $('#closeImport').click(function(){
+                    $('#importExportPanel').fadeOut(500);
+                });
+                
+                $('#showRecordings').click(function(){
+                    $('#recordingsPanel').fadeToggle(500);
+                });
+                
+                $('#closeRecordings').click(function(){
+                    $('#recordingsPanel').fadeOut(500);
+                });
+                
+                $('#numberOfPagesSelector').change(function(){
+                    var num = $('#numberOfPagesSelector').val();
+                    numberOfPages = num;
+                    $('#pageSelector').html('');
+                    for(var i=1;i<=num;i++)
+                    {
+                        $('#pageSelector').append('<option value="' + i + '">' + i + '</option>');   
+                    }
+                });
+                
+                $('#pageSelector').change(function(){
+                    var pageNum = $('#pageSelector').val();
+                    currentPage = pageNum - 1;
+                    updateAll();    
+                });
+			}
+			else
+			{
+				alert("Your browser does not support Web Audio API. Please switch to Chrome or any other Web Audio API-supporting browser.");
+			}
+		});
+        
+        function changeColor(col, amt) { //Lightens or darkens a hex color value
+            var useHash = false;
+            if (col[0] == "#") {
+                col = col.slice(1);
+                useHash = true;
+            }
+            var num = parseInt(col,16);
+            var r = (num >> 16) + amt;
+            if (r > 255) r = 255;
+            else if  (r < 0) r = 0;
+            var b = ((num >> 8) & 0x00FF) + amt;
+            if (b > 255) b = 255;
+            else if  (b < 0) b = 0;
+            var g = (num & 0x0000FF) + amt;
+            if (g > 255) g = 255;
+            else if (g < 0) g = 0;
+            return (useHash?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+        }
+	</script>
+</head>
+
+<body>
+	<div id='enclosure' style="width:100%; height:90%;">
+        <br><br>
+		<div id='splash' class='Absolute-Center'>
+			<svg id='logo' class = 'Absolute-Center'></svg>
+		</div>
+		<div id='menu' class='wrapper Absolute-Center'>
+            <header>
+            <div id='topBar'>
+                <input type="button" id='playButton' value="Play"/>
+                <input type="button" id='recButton' value="Rec"/><br><br>
+                <span class='controlsLabels'>Tempo: <input type="number" id='tempoSet' min='10' max='360' value='120'/> BPM</span>
+                <span class='controlsLabels'>Key</span>
+                <select id='rootSelector'>
+                    <option value='-9'>C</option>
+                    <option value='-8'>C#</option>
+                    <option value='-7'>D</option>
+                    <option value='-6'>D#</option>
+                    <option value='-5'>E</option>
+                    <option value='-4'>F</option>
+                    <option value='-3'>F#</option>
+                    <option value='-2'>G</option>
+                    <option value='-1'>G#</option>
+                    <option value='0'>A</option>
+                    <option value='1'>A#</option>
+                    <option value='2'>B</option>
+                </select>
+                <select id='keySelector'>
+                    <option value='0'>Major</option>
+                    <option value='1'>Minor</option>
+                </select>
+                <img id='logo' src='/logo.png' alt='see///SAW'>
+            </div>
+            </header>
+            <aside class="aside aside-1" id="fxAside">
+                <div class='buttonStack'>
+                    <input type="button" class='fxbutton' id='wahButton' value="Wah"/>
+                    <input type="button" class='fxbutton' id='wahSettings' value="Edit"/>
+                </div>
+                <div class='buttonStack'>
+                    <input type="button" class='fxbutton' id='driveButton' value="Drive"/>
+                    <input type="button" class='fxbutton' id='driveSettings' value="Edit"/>
+                </div>
+                <div class='buttonStack'>
+                    <input type="button" class='fxbutton' id='filterButton' value="Filter"/>
+                    <input type="button" class='fxbutton' id='filterSettings' value="Edit"/>
+                </div>
+                <div class='buttonStack'>
+                    <input type="button" class='fxbutton' id='chorusButton' value="chorus"/>
+                    <input type="button" class='fxbutton' id='chorusSettings' value="Edit"/>
+                </div>
+                <div class='buttonStack'>
+                    <input type="button" class='fxbutton' id='delayButton' value="Delay"/>
+                    <input type="button" class='fxbutton' id='delaySettings' value="Edit"/>
+                </div>
+                <div class='buttonStack'>
+                    <input type="button" class='fxbutton' id='rvbButton' value='Reverb'/>
+                    <input type="button" class='fxbutton' id='rvbSettings' value="Edit"/>
+                </div>
+                <div class='buttonStack'>
+                    <input type="button" class='fxbutton' id='compButton' value='comp'/>
+                    <input type="button" class='fxbutton' id='compSettings' value="Edit"/>
+                </div>
+                    
+            </aside> <!--left menu-->
+            
+            <div id='wahControls' class="effectControlPanel menuOff">
+                    <div class="Absolute-Center">
+                        <span class='controlsLabels'>BaseFrequency</span><br>
+                        <input type="range" class='instrSlider' id='wahBaseFrequency' min='0' max='1' value='0.5' step='0.01'/><br>
+                        <span class='controlsLabels'>Octaves</span><br>   
+                        <input type="range" class='instrSlider' id='wahExcursionOctaves' min='1' max='6' value='2' step='1'/><br>
+                        <span class='controlsLabels'>Resonance</span><br>   
+                        <input type="range" class='instrSlider' id='wahResonance' min='1' max='100' value='10' step='1'/><br>
+                        <br>
+                        <input type="button" id='closeWahControls' class='closing' value="close"/>
+                    </div>
+                </div>
+                
+                <div id='driveControls' class="effectControlPanel menuOff">
+                    <div class="Absolute-Center">
+                        <span class='controlsLabels'>Drive</span><br>
+                        <input type="range" class='instrSlider' id='overdriveDrive' min='0' max='1' value='0.7' step='0.01'/><br>
+                        <span class='controlsLabels'>Curve</span><br>
+                        <input type="range" class='instrSlider' id='overdriveCurveAmount' min='0' max='1' value='0.5' step='0.001'/><br>
+                        <span class='controlsLabels'>Gain</span><br>   
+                        <input type="range" class='instrSlider' id='overdriveGain' min='0' max='1' value='0.5' step='0.1'/><br>
+                        <span class='controlsLabels'>Algorithm</span><br>   
+                        <select id='overdriveAlgorithmSelector'>
+                            <option value='0'>0</option>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
+                        </select><br><br>
+                        <input type="button" id='closeDriveControls' class='closing' value="close"/>
+                    </div>
+                </div>
+                
+                <div id='filterControls' class="effectControlPanel menuOff">
+                    <div class="Absolute-Center">
+                        <span class='controlsLabels'>Freq</span><br>
+                        <input type="range" class='instrSlider' id='filterCutOff' min='30' max='12000' value='1000'/><br>
+                        <span class='controlsLabels'>Q</span><br>   
+                        <input type="range" class='instrSlider' id='filterQ' min='0' max='66' value='5'/><br>
+                        <span class='controlsLabels'>Gain</span><br>
+                        <input type="range" class='instrSlider' id='filterGain' min='-24' max='24' value='5'/><br>
+                        <span class='controlsLabels'>Filter Type</span><br>    
+                        <select id='filterTypeSelector'>
+                            <option value='lowpass'>Low-Pass</option>
+                            <option value='highpass'>High-Pass</option>
+                            <option value='bandpass'>Band-Pass</option>
+                            <option value='lowshelf'>Low-Shelf</option>
+                            <option value='highshelf'>High-Shelf</option>
+                            <option value='peaking'>Peaking</option>
+                            <option value='notch'>Notch</option>
+                        </select><br><br>
+                        <input type="button" id='closeFilterControls' class='closing' value="close"/>
+                    </div>
+                </div>
+                
+                <div id='chorusControls' class="effectControlPanel menuOff">
+                    <div class="Absolute-Center">
+                        <span class='controlsLabels'>Rate</span><br>
+                        <input type="range" class='instrSlider' id='chorusRate' min='0.01' max='8' value='1.5' step='0.01'/><br>
+                        <span class='controlsLabels'>Feedback</span><br>  
+                        <input type="range" class='instrSlider' id='chorusFeedback' min='0' max='1' value='0.2' step='0.01'/><br>
+                        <br>
+                        <input type="button" id='closeChorusControls' class='closing' value="close"/>
+                    </div>
+                </div>
+                
+                
+                <div id='delayControls' class="effectControlPanel menuOff">
+                    <div class="Absolute-Center">
+                        <span class='controlsLabels'>Time</span><br>
+                        <input type="range" class='instrSlider' id='delayTime' min='0' max='1' value='0.125' step='0.001'/><br>
+                        <span class='controlsLabels'>Feedback</span><br>   
+                        <input type="range" class='instrSlider' id='delayFeedback' min='0' max='1' value='0.45' step='0.01'/><br>
+                        <span class='controlsLabels'>Wet</span><br>   
+                        <input type="range" class='instrSlider' id='delayWetLevel' min='0' max='1' value='0.25' step='0.01'/><br>
+                        <span class='controlsLabels'>Dry</span><br>   
+                        <input type="range" class='instrSlider' id='delayDryLevel' min='0' max='1' value='1' step='0.01'/><br>
+                        <span class='controlsLabels'>Delay Type</span><br>    
+                        <select id='delayTypeSelector'>
+                            <option value='22500'>Digital</option>
+                            <option value='7000'>Analogue</option>
+                        </select><br><br>
+                        <input type="button" id='closeDelayControls' class='closing' value="close"/>
+                    </div>
+                </div>
+                
+                <div id='reverbControls' class="effectControlPanel menuOff">
+                    <div class="Absolute-Center">
+                        <span class='controlsLabels'>Wet</span><br>   
+                        <input type="range" class='instrSlider' id='reverbWetLevel' min='0' max='1' value='1' step='0.01'/><br>
+                        <span class='controlsLabels'>Dry</span><br>   
+                        <input type="range" class='instrSlider' id='reverbDryLevel' min='0' max='1' value='1' step='0.01'/><br>
+                        <br>
+                        <input type="button" id='closeReverbControls' class='closing' value="close"/>
+                    </div>
+                </div>
+                    
+                <div id='compressorControls' class="effectControlPanel menuOff">
+                    <div class="Absolute-Center">
+                        <span class='controlsLabels'>Threshold</span><br>
+                        <input type="range" class='instrSlider' id='compressorThreshold' min='-100' max='0' value='-20' step='0.5'/><br>
+                        <span class='controlsLabels'>Ratio</span><br>   
+                        <input type="range" class='instrSlider' id='compressorRatio' min='1' max='50' value='4' step='1'/><br>
+                        <span class='controlsLabels'>Attack</span><br>   
+                        <input type="range" class='instrSlider' id='compressorAttack' min='0' max='1000' value='1' step='1'/><br>
+                        <span class='controlsLabels'>Release</span><br>   
+                        <input type="range" class='instrSlider' id='compressorRelease' min='0' max='3000' value='0' step='1'/><br>
+                        <span class='controlsLabels'>Make-Up</span><br>
+                        <input type="range" class='instrSlider' id='compressorMakeUpGain' min='0' max='3' value='1' step='0.01'/><br>
+                        <br>
+                        <input type="button" id='closeCompressorControls' class='closing' value="close"/>
+                    </div>
+                </div>
+                
+                <div id='instrumentControls' class="instrControlPanel menuOn">
+                    <div class="Absolute-Center">
+                        <span class='controlsLabels'>Waveform</span><br>
+                        <select id='waveSelector'>
+                            <option value='0'>Sine</option>
+                            <option value='1'>Square</option>
+                            <option value='2'>Saw</option>
+                            <option value='3'>Triangle</option>
+                        </select><br>
+                        <span class='controlsLabels'>Octave</span><br>
+                        <select id='octaveSelector'>
+                            <option value='0'>0</option>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
+                        </select><br><br>
+                        <span class='controlsLabels'>Attack</span><br>
+                        <input type="range" class='instrSlider' id='instrAttack' min='0' max='1000' value='50'/><br>
+                        <span class='controlsLabels'>Decay</span><br>
+                        <input type="range" class='instrSlider' id='instrDecay' min='0' max='1000' value='10'/><br>
+                        <span class='controlsLabels'>Sustain</span><br>
+                        <input type="range" class='instrSlider' id='instrSustain' min='0' max='1000' value='1000'/><br>
+                        <span class='controlsLabels'>Release</span><br>
+                        <input type="range" class='instrSlider' id='instrRelease' min='0' max='5000' value='10'/><br>
+                        <hr/><br>
+                        <span class='controlsLabels'>Volume</span><br>
+                        <input type="range" class='instrSlider' id='instrVolume' min='0' max='1500' value='1000'/><br>
+                        <span class='controlsLabels'>Pan</span><br>
+                        <span class='controlsLabels'>L<input type="range" class='instrSlider' id='instrPan' min='-45' max='45' step='0.1' value='0'/>R</span><br>
+                        
+                    </div>
+                </div>
+            
+            <article class="main"><!--grid and stuff-->
+<!--            <div style="width: 58%; height: 90%; position: absolute; z-index: 2;">-->
+                <div style='text-align: center;'>
+<!--
+                    
+                    the id of a grid cell is g(row)_(col)
+                    
+                
+-->
+<!--                    row 1-->
+                    <div class='grid gridOff' id='g0_0'></div>
+                    <div class='grid gridOff' id='g0_1'></div>
+                    <div class='grid gridOff' id='g0_2'></div>
+                    <div class='grid gridOff' id='g0_3'></div>
+                    <div class='grid gridOff' id='g0_4'></div>
+                    <div class='grid gridOff' id='g0_5'></div>
+                    <div class='grid gridOff' id='g0_6'></div>
+                    <div class='grid gridOff' id='g0_7'></div>
+                    <div class='grid gridOff' id='g0_8'></div>
+                    <div class='grid gridOff' id='g0_9'></div>
+                    <div class='grid gridOff' id='g0_a'></div>
+                    <div class='grid gridOff' id='g0_b'></div>
+                    <div class='grid gridOff' id='g0_c'></div>
+                    <div class='grid gridOff' id='g0_d'></div>
+                    <div class='grid gridOff' id='g0_e'></div>
+                    <div class='grid gridOff' id='g0_f'></div><br>
+<!--                    row 2-->
+                    <div class='grid gridOff' id='g1_0'></div>
+                    <div class='grid gridOff' id='g1_1'></div>
+                    <div class='grid gridOff' id='g1_2'></div>
+                    <div class='grid gridOff' id='g1_3'></div>
+                    <div class='grid gridOff' id='g1_4'></div>
+                    <div class='grid gridOff' id='g1_5'></div>
+                    <div class='grid gridOff' id='g1_6'></div>
+                    <div class='grid gridOff' id='g1_7'></div>
+                    <div class='grid gridOff' id='g1_8'></div>
+                    <div class='grid gridOff' id='g1_9'></div>
+                    <div class='grid gridOff' id='g1_a'></div>
+                    <div class='grid gridOff' id='g1_b'></div>
+                    <div class='grid gridOff' id='g1_c'></div>
+                    <div class='grid gridOff' id='g1_d'></div>
+                    <div class='grid gridOff' id='g1_e'></div>
+                    <div class='grid gridOff' id='g1_f'></div><br>
+<!--                    row 3-->
+                    <div class='grid gridOff' id='g2_0'></div>
+                    <div class='grid gridOff' id='g2_1'></div>
+                    <div class='grid gridOff' id='g2_2'></div>
+                    <div class='grid gridOff' id='g2_3'></div>
+                    <div class='grid gridOff' id='g2_4'></div>
+                    <div class='grid gridOff' id='g2_5'></div>
+                    <div class='grid gridOff' id='g2_6'></div>
+                    <div class='grid gridOff' id='g2_7'></div>
+                    <div class='grid gridOff' id='g2_8'></div>
+                    <div class='grid gridOff' id='g2_9'></div>
+                    <div class='grid gridOff' id='g2_a'></div>
+                    <div class='grid gridOff' id='g2_b'></div>
+                    <div class='grid gridOff' id='g2_c'></div>
+                    <div class='grid gridOff' id='g2_d'></div>
+                    <div class='grid gridOff' id='g2_e'></div>
+                    <div class='grid gridOff' id='g2_f'></div><br>
+<!--                    row 4-->
+                    <div class='grid gridOff' id='g3_0'></div>
+                    <div class='grid gridOff' id='g3_1'></div>
+                    <div class='grid gridOff' id='g3_2'></div>
+                    <div class='grid gridOff' id='g3_3'></div>
+                    <div class='grid gridOff' id='g3_4'></div>
+                    <div class='grid gridOff' id='g3_5'></div>
+                    <div class='grid gridOff' id='g3_6'></div>
+                    <div class='grid gridOff' id='g3_7'></div>
+                    <div class='grid gridOff' id='g3_8'></div>
+                    <div class='grid gridOff' id='g3_9'></div>
+                    <div class='grid gridOff' id='g3_a'></div>
+                    <div class='grid gridOff' id='g3_b'></div>
+                    <div class='grid gridOff' id='g3_c'></div>
+                    <div class='grid gridOff' id='g3_d'></div>
+                    <div class='grid gridOff' id='g3_e'></div>
+                    <div class='grid gridOff' id='g3_f'></div><br>
+<!--                    row 5-->
+                    <div class='grid gridOff' id='g4_0'></div>
+                    <div class='grid gridOff' id='g4_1'></div>
+                    <div class='grid gridOff' id='g4_2'></div>
+                    <div class='grid gridOff' id='g4_3'></div>
+                    <div class='grid gridOff' id='g4_4'></div>
+                    <div class='grid gridOff' id='g4_5'></div>
+                    <div class='grid gridOff' id='g4_6'></div>
+                    <div class='grid gridOff' id='g4_7'></div>
+                    <div class='grid gridOff' id='g4_8'></div>
+                    <div class='grid gridOff' id='g4_9'></div>
+                    <div class='grid gridOff' id='g4_a'></div>
+                    <div class='grid gridOff' id='g4_b'></div>
+                    <div class='grid gridOff' id='g4_c'></div>
+                    <div class='grid gridOff' id='g4_d'></div>
+                    <div class='grid gridOff' id='g4_e'></div>
+                    <div class='grid gridOff' id='g4_f'></div><br>
+<!--                    row 6-->
+                    <div class='grid gridOff' id='g5_0'></div>
+                    <div class='grid gridOff' id='g5_1'></div>
+                    <div class='grid gridOff' id='g5_2'></div>
+                    <div class='grid gridOff' id='g5_3'></div>
+                    <div class='grid gridOff' id='g5_4'></div>
+                    <div class='grid gridOff' id='g5_5'></div>
+                    <div class='grid gridOff' id='g5_6'></div>
+                    <div class='grid gridOff' id='g5_7'></div>
+                    <div class='grid gridOff' id='g5_8'></div>
+                    <div class='grid gridOff' id='g5_9'></div>
+                    <div class='grid gridOff' id='g5_a'></div>
+                    <div class='grid gridOff' id='g5_b'></div>
+                    <div class='grid gridOff' id='g5_c'></div>
+                    <div class='grid gridOff' id='g5_d'></div>
+                    <div class='grid gridOff' id='g5_e'></div>
+                    <div class='grid gridOff' id='g5_f'></div><br>
+<!--                    row 7-->
+                    <div class='grid gridOff' id='g6_0'></div>
+                    <div class='grid gridOff' id='g6_1'></div>
+                    <div class='grid gridOff' id='g6_2'></div>
+                    <div class='grid gridOff' id='g6_3'></div>
+                    <div class='grid gridOff' id='g6_4'></div>
+                    <div class='grid gridOff' id='g6_5'></div>
+                    <div class='grid gridOff' id='g6_6'></div>
+                    <div class='grid gridOff' id='g6_7'></div>
+                    <div class='grid gridOff' id='g6_8'></div>
+                    <div class='grid gridOff' id='g6_9'></div>
+                    <div class='grid gridOff' id='g6_a'></div>
+                    <div class='grid gridOff' id='g6_b'></div>
+                    <div class='grid gridOff' id='g6_c'></div>
+                    <div class='grid gridOff' id='g6_d'></div>
+                    <div class='grid gridOff' id='g6_e'></div>
+                    <div class='grid gridOff' id='g6_f'></div><br>
+<!--                    row 8-->
+                    <div class='grid gridOff' id='g7_0'></div>
+                    <div class='grid gridOff' id='g7_1'></div>
+                    <div class='grid gridOff' id='g7_2'></div>
+                    <div class='grid gridOff' id='g7_3'></div>
+                    <div class='grid gridOff' id='g7_4'></div>
+                    <div class='grid gridOff' id='g7_5'></div>
+                    <div class='grid gridOff' id='g7_6'></div>
+                    <div class='grid gridOff' id='g7_7'></div>
+                    <div class='grid gridOff' id='g7_8'></div>
+                    <div class='grid gridOff' id='g7_9'></div>
+                    <div class='grid gridOff' id='g7_a'></div>
+                    <div class='grid gridOff' id='g7_b'></div>
+                    <div class='grid gridOff' id='g7_c'></div>
+                    <div class='grid gridOff' id='g7_d'></div>
+                    <div class='grid gridOff' id='g7_e'></div>
+                    <div class='grid gridOff' id='g7_f'></div><br>
+<!--                    row 9-->
+                    <div class='grid gridOff' id='g8_0'></div>
+                    <div class='grid gridOff' id='g8_1'></div>
+                    <div class='grid gridOff' id='g8_2'></div>
+                    <div class='grid gridOff' id='g8_3'></div>
+                    <div class='grid gridOff' id='g8_4'></div>
+                    <div class='grid gridOff' id='g8_5'></div>
+                    <div class='grid gridOff' id='g8_6'></div>
+                    <div class='grid gridOff' id='g8_7'></div>
+                    <div class='grid gridOff' id='g8_8'></div>
+                    <div class='grid gridOff' id='g8_9'></div>
+                    <div class='grid gridOff' id='g8_a'></div>
+                    <div class='grid gridOff' id='g8_b'></div>
+                    <div class='grid gridOff' id='g8_c'></div>
+                    <div class='grid gridOff' id='g8_d'></div>
+                    <div class='grid gridOff' id='g8_e'></div>
+                    <div class='grid gridOff' id='g8_f'></div><br>
+<!--                    row 10-->
+                    <div class='grid gridOff' id='g9_0'></div>
+                    <div class='grid gridOff' id='g9_1'></div>
+                    <div class='grid gridOff' id='g9_2'></div>
+                    <div class='grid gridOff' id='g9_3'></div>
+                    <div class='grid gridOff' id='g9_4'></div>
+                    <div class='grid gridOff' id='g9_5'></div>
+                    <div class='grid gridOff' id='g9_6'></div>
+                    <div class='grid gridOff' id='g9_7'></div>
+                    <div class='grid gridOff' id='g9_8'></div>
+                    <div class='grid gridOff' id='g9_9'></div>
+                    <div class='grid gridOff' id='g9_a'></div>
+                    <div class='grid gridOff' id='g9_b'></div>
+                    <div class='grid gridOff' id='g9_c'></div>
+                    <div class='grid gridOff' id='g9_d'></div>
+                    <div class='grid gridOff' id='g9_e'></div>
+                    <div class='grid gridOff' id='g9_f'></div><br>
+<!--                    row 11-->
+                    <div class='grid gridOff' id='ga_0'></div>
+                    <div class='grid gridOff' id='ga_1'></div>
+                    <div class='grid gridOff' id='ga_2'></div>
+                    <div class='grid gridOff' id='ga_3'></div>
+                    <div class='grid gridOff' id='ga_4'></div>
+                    <div class='grid gridOff' id='ga_5'></div>
+                    <div class='grid gridOff' id='ga_6'></div>
+                    <div class='grid gridOff' id='ga_7'></div>
+                    <div class='grid gridOff' id='ga_8'></div>
+                    <div class='grid gridOff' id='ga_9'></div>
+                    <div class='grid gridOff' id='ga_a'></div>
+                    <div class='grid gridOff' id='ga_b'></div>
+                    <div class='grid gridOff' id='ga_c'></div>
+                    <div class='grid gridOff' id='ga_d'></div>
+                    <div class='grid gridOff' id='ga_e'></div>
+                    <div class='grid gridOff' id='ga_f'></div><br>
+<!--                    row 12-->
+                    <div class='grid gridOff' id='gb_0'></div>
+                    <div class='grid gridOff' id='gb_1'></div>
+                    <div class='grid gridOff' id='gb_2'></div>
+                    <div class='grid gridOff' id='gb_3'></div>
+                    <div class='grid gridOff' id='gb_4'></div>
+                    <div class='grid gridOff' id='gb_5'></div>
+                    <div class='grid gridOff' id='gb_6'></div>
+                    <div class='grid gridOff' id='gb_7'></div>
+                    <div class='grid gridOff' id='gb_8'></div>
+                    <div class='grid gridOff' id='gb_9'></div>
+                    <div class='grid gridOff' id='gb_a'></div>
+                    <div class='grid gridOff' id='gb_b'></div>
+                    <div class='grid gridOff' id='gb_c'></div>
+                    <div class='grid gridOff' id='gb_d'></div>
+                    <div class='grid gridOff' id='gb_e'></div>
+                    <div class='grid gridOff' id='gb_f'></div><br>
+<!--                    row 13-->
+                    <div class='grid gridOff' id='gc_0'></div>
+                    <div class='grid gridOff' id='gc_1'></div>
+                    <div class='grid gridOff' id='gc_2'></div>
+                    <div class='grid gridOff' id='gc_3'></div>
+                    <div class='grid gridOff' id='gc_4'></div>
+                    <div class='grid gridOff' id='gc_5'></div>
+                    <div class='grid gridOff' id='gc_6'></div>
+                    <div class='grid gridOff' id='gc_7'></div>
+                    <div class='grid gridOff' id='gc_8'></div>
+                    <div class='grid gridOff' id='gc_9'></div>
+                    <div class='grid gridOff' id='gc_a'></div>
+                    <div class='grid gridOff' id='gc_b'></div>
+                    <div class='grid gridOff' id='gc_c'></div>
+                    <div class='grid gridOff' id='gc_d'></div>
+                    <div class='grid gridOff' id='gc_e'></div>
+                    <div class='grid gridOff' id='gc_f'></div><br>
+<!--                    row 14-->
+                    <div class='grid gridOff' id='gd_0'></div>
+                    <div class='grid gridOff' id='gd_1'></div>
+                    <div class='grid gridOff' id='gd_2'></div>
+                    <div class='grid gridOff' id='gd_3'></div>
+                    <div class='grid gridOff' id='gd_4'></div>
+                    <div class='grid gridOff' id='gd_5'></div>
+                    <div class='grid gridOff' id='gd_6'></div>
+                    <div class='grid gridOff' id='gd_7'></div>
+                    <div class='grid gridOff' id='gd_8'></div>
+                    <div class='grid gridOff' id='gd_9'></div>
+                    <div class='grid gridOff' id='gd_a'></div>
+                    <div class='grid gridOff' id='gd_b'></div>
+                    <div class='grid gridOff' id='gd_c'></div>
+                    <div class='grid gridOff' id='gd_d'></div>
+                    <div class='grid gridOff' id='gd_e'></div>
+                    <div class='grid gridOff' id='gd_f'></div><br>
+<!--                    row 15-->
+                    <div class='grid gridOff' id='ge_0'></div>
+                    <div class='grid gridOff' id='ge_1'></div>
+                    <div class='grid gridOff' id='ge_2'></div>
+                    <div class='grid gridOff' id='ge_3'></div>
+                    <div class='grid gridOff' id='ge_4'></div>
+                    <div class='grid gridOff' id='ge_5'></div>
+                    <div class='grid gridOff' id='ge_6'></div>
+                    <div class='grid gridOff' id='ge_7'></div>
+                    <div class='grid gridOff' id='ge_8'></div>
+                    <div class='grid gridOff' id='ge_9'></div>
+                    <div class='grid gridOff' id='ge_a'></div>
+                    <div class='grid gridOff' id='ge_b'></div>
+                    <div class='grid gridOff' id='ge_c'></div>
+                    <div class='grid gridOff' id='ge_d'></div>
+                    <div class='grid gridOff' id='ge_e'></div>
+                    <div class='grid gridOff' id='ge_f'></div><br>
+<!--                    row 16-->
+                    <div class='grid gridOff' id='gf_0'></div>
+                    <div class='grid gridOff' id='gf_1'></div>
+                    <div class='grid gridOff' id='gf_2'></div>
+                    <div class='grid gridOff' id='gf_3'></div>
+                    <div class='grid gridOff' id='gf_4'></div>
+                    <div class='grid gridOff' id='gf_5'></div>
+                    <div class='grid gridOff' id='gf_6'></div>
+                    <div class='grid gridOff' id='gf_7'></div>
+                    <div class='grid gridOff' id='gf_8'></div>
+                    <div class='grid gridOff' id='gf_9'></div>
+                    <div class='grid gridOff' id='gf_a'></div>
+                    <div class='grid gridOff' id='gf_b'></div>
+                    <div class='grid gridOff' id='gf_c'></div>
+                    <div class='grid gridOff' id='gf_d'></div>
+                    <div class='grid gridOff' id='gf_e'></div>
+                    <div class='grid gridOff' id='gf_f'></div>
+                </div>
+                <div id='importExportPanel' class='importExportPanel menuOn'>
+                    <span class='controlsLabels'>Preset:</span>
+                    <select id='presetSelector' style='width: 60%;' value='1'>
+                        <option value='1'>1 - Gloomy</option>
+                        <option value='2'>2 - Housey</option>
+                    </select><br><br>
+                    <input type='text' id='importText' value="" cols='400' rows='10' style='overflow: scroll; word-break: break-word; width: 70%; height: 50%;'/>
+                    <br><br>
+                    <input type='button' id='import' value="Import"/>
+                    <input type='button' id='load' value="Load"/>
+                    <input type='button' id='closeImport' class='closing' value='Close'/>
+                </div>
+                <div id='recordingsPanel' class='importExportPanel menuOn'>
+                    <ul id="recordingslist"></ul><br>
+                    <input type='button' id='closeRecordings'class='closing' value='Close'/>
+                </div>
+            </article> 
+            
+            <aside class="aside aside-2" id="instrAside"> 
+                    <input type="button" id='instrButton1' value="one"/></br>
+                    <input type="button" id='instrButton2' value="two"/></br>
+                    <input type="button" id='instrButton3' value="three"/></br>
+                    <input type="button" id='instrButton4' value="four"/></br>
+                    <input type="button" id='drumButton' value="drum"/></br>
+                    <input type="button" id='instrOptions' value="options"/></br>
+            </aside> <!--rigth menu-->
+			<footer class='footer'>
+                <input type='button' id='showRecordings' value="My recordings"/>
+                    <input type='button' id='importExport' value="Import / Export"/><br>
+                    <span class='controlsLabels'>Current bar:</span>
+                    <select id='pageSelector' value='1'>
+                        <option value='1'>1</option>
+                    </select>
+                    <span class='controlsLabels'>Number of bars:</span>
+                    <select id='numberOfPagesSelector' value='1'>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                        <option value='9'>9</option>
+                        <option value='10'>10</option>
+                        <option value='11'>11</option>
+                        <option value='12'>12</option>
+                        <option value='13'>13</option>
+                        <option value='14'>14</option>
+                        <option value='15'>15</option>
+                        <option value='16'>16</option>
+                    </select>
+                    </br>
+                    </br>
+                    <p id='creators'>&copy; 2013 P.Baralidis, D.Hristov, J.Woodbridge</p>
+            </footer>
+		</div>
+	</div>
+</body>
+
+</html>

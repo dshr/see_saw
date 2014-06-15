@@ -1,0 +1,348 @@
+<svg width="1280" height="960" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g display="inline">
+  <title>Base</title>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="293" y="104" width="30" height="30" id="svg_22" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_71" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="293.25" y="144.125" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.125" y="104.0625" width="30" height="30" id="svg_2" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.125" y="144.1875" width="30" height="30" id="svg_12" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.1875" y="104.03125" width="30" height="30" id="svg_13" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.1875" y="144.15625" width="30" height="30" id="svg_19" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.0625" y="104.09375" width="30" height="30" id="svg_20" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.0625" y="144.21875" width="30" height="30" id="svg_27" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="292.96875" y="184.01563" width="30" height="30" id="svg_28" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="293.21875" y="224.14063" width="30" height="30" id="svg_29" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.09375" y="184.07813" width="30" height="30" id="svg_30" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.09375" y="224.20313" width="30" height="30" id="svg_31" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.15625" y="184.04688" width="30" height="30" id="svg_32" stroke="#aad4ff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.15625" y="224.17188" width="30" height="30" id="svg_33" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.03125" y="184.10938" width="30" height="30" id="svg_34" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.03125" y="224.23438" width="30" height="30" id="svg_35" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="292.96875" y="264.01563" width="30" height="30" id="svg_36" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="293.21875" y="304.14063" width="30" height="30" id="svg_37" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.09375" y="264.07813" width="30" height="30" id="svg_38" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.09375" y="304.20313" width="30" height="30" id="svg_39" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.15625" y="264.04688" width="30" height="30" id="svg_40" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.15625" y="304.17188" width="30" height="30" id="svg_41" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.03125" y="264.10938" width="30" height="30" id="svg_42" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.03125" y="304.23438" width="30" height="30" id="svg_43" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="292.96875" y="344.01563" width="30" height="30" id="svg_44" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="293.21875" y="384.14063" width="30" height="30" id="svg_45" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.09375" y="344.07813" width="30" height="30" id="svg_46" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.09375" y="384.20313" width="30" height="30" id="svg_47" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.15625" y="344.04688" width="30" height="30" id="svg_48" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.15625" y="384.17188" width="30" height="30" id="svg_49" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.03125" y="344.10938" width="30" height="30" id="svg_50" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.03125" y="384.23438" width="30" height="30" id="svg_51" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_1" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="292.96875" y="424.14063" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_3" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="293.21875" y="464.26563" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.09375" y="424.20313" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_5" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="333.09375" y="464.32813" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_6" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.15625" y="424.17188" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_7" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="373.15625" y="464.29688" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_8" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.03125" y="424.23438" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_9" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="413.03125" y="464.35938" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_10" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="452.98438" y="104.07031" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_11" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="453.23438" y="144.19531" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_14" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.10938" y="104.13281" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_15" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.10938" y="144.25781" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_16" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.17188" y="104.10156" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_17" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.17188" y="144.22656" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_18" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.04688" y="104.16406" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_21" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.04688" y="144.28906" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_23" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="452.95313" y="184.08594" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_24" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="453.20313" y="224.21094" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_25" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.07813" y="184.14844" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_26" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.07813" y="224.27344" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_52" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.14063" y="184.11719" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_53" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.14063" y="224.24219" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_54" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.01563" y="184.17969" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_55" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.01563" y="224.30469" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_56" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="452.95313" y="264.08594" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_57" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="453.20313" y="304.21094" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_58" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.07813" y="264.14844" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_59" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.07813" y="304.27344" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_60" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.14063" y="264.11719" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_61" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.14063" y="304.24219" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_62" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.01563" y="264.17969" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_63" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.01563" y="304.30469" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_64" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="452.95313" y="344.08594" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_65" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="453.20313" y="384.21094" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_66" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.07813" y="344.14844" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_67" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.07813" y="384.27344" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_68" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.14063" y="344.11719" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_69" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.14063" y="384.24219" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_70" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.01563" y="344.17969" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_72" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.01563" y="384.30469" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_73" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="452.95313" y="424.21094" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_74" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="453.20313" y="464.33594" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_75" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.07813" y="424.27344" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_76" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493.07813" y="464.39844" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_77" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.14063" y="424.24219" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_78" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="533.14063" y="464.36719" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_79" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.01563" y="424.30469" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" id="svg_80" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="573.01563" y="464.42969" width="30" height="30" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.0831" y="103.92152" width="30" height="30" id="svg_81" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.3331" y="144.04652" width="30" height="30" id="svg_82" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.2081" y="103.98402" width="30" height="30" id="svg_83" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.2081" y="144.10902" width="30" height="30" id="svg_84" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.2706" y="103.95277" width="30" height="30" id="svg_85" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.2706" y="144.07777" width="30" height="30" id="svg_86" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.1456" y="104.01527" width="30" height="30" id="svg_87" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.1456" y="144.14027" width="30" height="30" id="svg_88" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.05185" y="183.93715" width="30" height="30" id="svg_89" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.30185" y="224.06215" width="30" height="30" id="svg_90" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.17685" y="183.99965" width="30" height="30" id="svg_91" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.17685" y="224.12465" width="30" height="30" id="svg_92" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.23935" y="183.9684" width="30" height="30" id="svg_93" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.23935" y="224.0934" width="30" height="30" id="svg_94" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.11435" y="184.0309" width="30" height="30" id="svg_95" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.11435" y="224.1559" width="30" height="30" id="svg_96" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.05185" y="263.93715" width="30" height="30" id="svg_97" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.30185" y="304.06215" width="30" height="30" id="svg_98" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.17685" y="263.99965" width="30" height="30" id="svg_99" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.17685" y="304.12465" width="30" height="30" id="svg_100" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.23935" y="263.9684" width="30" height="30" id="svg_101" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.23935" y="304.0934" width="30" height="30" id="svg_102" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.11435" y="264.0309" width="30" height="30" id="svg_103" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.11435" y="304.1559" width="30" height="30" id="svg_104" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.05185" y="343.93715" width="30" height="30" id="svg_105" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.30185" y="384.06215" width="30" height="30" id="svg_106" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.17685" y="343.99965" width="30" height="30" id="svg_107" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.17685" y="384.12465" width="30" height="30" id="svg_108" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.23935" y="343.9684" width="30" height="30" id="svg_109" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.23935" y="384.0934" width="30" height="30" id="svg_110" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.11435" y="344.0309" width="30" height="30" id="svg_111" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.11435" y="384.1559" width="30" height="30" id="svg_112" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.05185" y="424.06215" width="30" height="30" id="svg_113" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="613.30185" y="464.18715" width="30" height="30" id="svg_114" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.17685" y="424.12465" width="30" height="30" id="svg_115" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="653.17685" y="464.24965" width="30" height="30" id="svg_116" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.23935" y="424.0934" width="30" height="30" id="svg_117" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="693.23935" y="464.2184" width="30" height="30" id="svg_118" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.11435" y="424.1559" width="30" height="30" id="svg_119" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="733.11435" y="464.2809" width="30" height="30" id="svg_120" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.06748" y="103.99183" width="30" height="30" id="svg_121" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.31748" y="144.11683" width="30" height="30" id="svg_122" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.19248" y="104.05433" width="30" height="30" id="svg_123" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.19248" y="144.17933" width="30" height="30" id="svg_124" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.25498" y="104.02308" width="30" height="30" id="svg_125" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.25498" y="144.14808" width="30" height="30" id="svg_126" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.12998" y="104.08558" width="30" height="30" id="svg_127" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.12998" y="144.21058" width="30" height="30" id="svg_128" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.03623" y="184.00746" width="30" height="30" id="svg_129" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.28623" y="224.13246" width="30" height="30" id="svg_130" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.16123" y="184.06996" width="30" height="30" id="svg_131" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.16123" y="224.19496" width="30" height="30" id="svg_132" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.22373" y="184.03871" width="30" height="30" id="svg_133" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.22373" y="224.16371" width="30" height="30" id="svg_134" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.09873" y="184.10121" width="30" height="30" id="svg_135" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.09873" y="224.22621" width="30" height="30" id="svg_136" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.03623" y="264.00746" width="30" height="30" id="svg_137" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.28623" y="304.13246" width="30" height="30" id="svg_138" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.16123" y="264.06996" width="30" height="30" id="svg_139" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.16123" y="304.19496" width="30" height="30" id="svg_140" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.22373" y="264.03871" width="30" height="30" id="svg_141" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.22373" y="304.16371" width="30" height="30" id="svg_142" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.09873" y="264.10121" width="30" height="30" id="svg_143" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.09873" y="304.22621" width="30" height="30" id="svg_144" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.03623" y="344.00746" width="30" height="30" id="svg_145" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.28623" y="384.13246" width="30" height="30" id="svg_146" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.16123" y="344.06996" width="30" height="30" id="svg_147" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.16123" y="384.19496" width="30" height="30" id="svg_148" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.22373" y="344.03871" width="30" height="30" id="svg_149" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.22373" y="384.16371" width="30" height="30" id="svg_150" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.09873" y="344.10121" width="30" height="30" id="svg_151" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.09873" y="384.22621" width="30" height="30" id="svg_152" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.03623" y="424.13246" width="30" height="30" id="svg_153" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="773.28623" y="464.25746" width="30" height="30" id="svg_154" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.16123" y="424.19496" width="30" height="30" id="svg_155" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="813.16123" y="464.31996" width="30" height="30" id="svg_156" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.22373" y="424.16371" width="30" height="30" id="svg_157" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="853.22373" y="464.28871" width="30" height="30" id="svg_158" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.09873" y="424.22621" width="30" height="30" id="svg_159" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="893.09873" y="464.35121" width="30" height="30" id="svg_160" stroke="#007fff"/>
+  <line fill="none" stroke-width="4" x1="288" y1="92" x2="288" y2="503" id="svg_161" stroke="#cccccc"/>
+  <line fill="none" stroke-width="4" x1="448" y1="92" x2="448" y2="504" id="svg_162" stroke="#cccccc"/>
+  <line fill="none" stroke-width="4" x1="608" y1="92" x2="608" y2="504" id="svg_163" stroke="#cccccc"/>
+  <line fill="none" stroke-width="4" x1="768" y1="92" x2="768" y2="504" id="svg_164" stroke="#cccccc"/>
+  <line fill="none" stroke-width="4" x1="928" y1="92" x2="928" y2="504" id="svg_165" stroke="#cccccc"/>
+  <rect ry="4" rx="4" id="svg_166" height="66" width="173" y="105.75" x="940" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="9" fill="#007fff" stroke="#007fff"/>
+  <rect ry="4" rx="4" height="66" width="173" y="186" x="940" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ff0000" id="svg_207" stroke="#ff0000"/>
+  <rect ry="4" rx="4" height="66" width="173" y="265.75" x="940" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ff7f00" id="svg_208" stroke="#ff7f00"/>
+  <rect ry="4" rx="4" height="66" width="173" y="345.5" x="940" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#3f7f00" id="svg_209" stroke="#3f7f00"/>
+  <rect ry="4" rx="4" height="66" width="173" y="426.75" x="940" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" id="svg_210" stroke="#7f007f"/>
+  <rect ry="4" rx="4" height="66" width="173" y="105.08333" x="97.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#aad4ff" id="svg_211" stroke="#aad4ff"/>
+  <rect ry="4" rx="4" height="66" width="173" y="185.33333" x="97.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" id="svg_212" stroke="#007fff"/>
+  <rect ry="4" rx="4" height="66" width="173" y="265.08333" x="97.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#007fff" id="svg_213" stroke="#007fff"/>
+  <rect ry="4" rx="4" height="66" width="173" y="344.83333" x="97.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#aad4ff" id="svg_214" stroke="#aad4ff"/>
+  <rect ry="4" rx="4" height="66" width="173" y="426.08333" x="97.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#aad4ff" id="svg_215" stroke="#aad4ff"/>
+  <text transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-size="24" id="svg_167" y="143.61628" x="1021" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff" stroke="#005fbf">Lead</text>
+  <text id="svg_169" transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="215.87845" x="1022.67742" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff" stroke="#ff5656">Pad 1</text>
+  <text transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="287.23734" x="1022.67742" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff" id="svg_168" stroke="#ffffff">Pad 2</text>
+  <text transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="359.49951" x="1021" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff" id="svg_170" stroke="#ffffff">Bass</text>
+  <text transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="432.66495" x="1021" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#3f3f3f" id="svg_171" stroke="#ffffff">Drums</text>
+  <text id="svg_172" transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="141.80973" x="315" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff" stroke="#ffffff">Overdrive</text>
+  <text id="svg_173" transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="214.97517" x="315" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#3f3f3f" stroke="#ff5656">Filter</text>
+  <text id="svg_174" transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="287.23734" x="315" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff" stroke="#ff5656">Delay</text>
+  <text id="svg_175" transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="358.59623" x="315" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff" stroke="#ff5656">Reverb</text>
+  <text id="svg_176" transform="matrix(1.19231 0 0 1.10708 -191.731 -9.58728)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="432.66495" x="315" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff" stroke="#ff5656">Compressor</text>
+  <rect ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="296" y="44.33333" width="144.66666" height="40" id="svg_177" stroke="#bfbfbf"/>
+  <rect id="svg_178" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="456.66669" y="44.5" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <rect id="svg_179" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="617.66669" y="44.5" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <rect id="svg_180" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="776.66669" y="44.5" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <path id="svg_181" d="m825,53l0,21l20,-10l-20,-11z" stroke-linecap="null" stroke-linejoin="round" stroke-dasharray="null" stroke-width="5" fill="#3f3f3f" stroke="#3f3f3f"/>
+  <line id="svg_182" y2="76" x2="857.77778" y1="52.66667" x1="857.77778" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="null" stroke-width="5" fill="none" stroke="#3f3f3f"/>
+  <line id="svg_183" y2="76" x2="866.88889" y1="52.66667" x1="866.88889" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="null" stroke-width="5" fill="none" stroke="#3f3f3f"/>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="round" stroke-linecap="null" x="528" y="71" id="svg_185" font-size="20" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#3f3f3f">Export / Import</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="round" stroke-linecap="null" x="664" y="73" id="svg_186" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#3f3f3f">120</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="round" stroke-linecap="null" x="712" y="73" id="svg_187" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#3f3f3f">bpm</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="round" stroke-linecap="round" x="338" y="73" id="svg_184" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#3f3f3f">Bar</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="round" stroke-linecap="round" x="368" y="73" id="svg_188" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#3f3f3f">1</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="round" stroke-linecap="round" x="387" y="73" id="svg_189" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#3f3f3f">of</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="round" stroke-linecap="round" x="409" y="73" id="svg_190" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#3f3f3f">1</text>
+ </g>
+ <g display="none">
+  <title>Filter Controls</title>
+  <rect ry="4" rx="4" id="svg_191" height="410" width="161" y="93" x="287" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" stroke="#007fff"/>
+  <rect ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="305" y="114" width="49" height="209" id="svg_192" stroke="#007fff"/>
+  <rect ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="382" y="114" width="49" height="209" id="svg_193" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="295.66666" y="365.50002" width="39.66666" height="40" id="svg_194" stroke="#bfbfbf"/>
+  <rect id="svg_195" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="295.66667" y="425.50002" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <circle fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="329" cy="207" r="23.41382" id="svg_196" stroke="#007fff"/>
+  <circle fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="406" cy="248" r="23.41382" id="svg_198" stroke="#007fff"/>
+  <text fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="328" y="347" id="svg_199" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">freq</text>
+  <text fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="407" y="347" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_200" stroke="#007fff">q</text>
+  <text fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="316" y="394" id="svg_201" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#bfbfbf">LP</text>
+  <rect ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="348.06666" y="365.90002" width="39.66666" height="40" id="svg_202" stroke="#007fff"/>
+  <text fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="368.4" y="394.4" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_203" stroke="#bfbfbf">BP</text>
+  <rect ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="398.86666" y="365.90002" width="39.66666" height="40" id="svg_204" stroke="#bfbfbf"/>
+  <text fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="419.2" y="394.4" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_205" stroke="#bfbfbf">HP</text>
+  <text fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="367.2" y="453.2" id="svg_206" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">Exit</text>
+ </g>
+ <g display="none">
+  <title>OD controls</title>
+  <rect id="svg_197" ry="4" rx="4" height="410" width="161" y="93" x="287" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" stroke="#007fff"/>
+  <rect id="svg_216" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="305" y="114" width="49" height="249" stroke="#007fff"/>
+  <rect id="svg_217" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="382" y="114" width="49" height="249" stroke="#007fff"/>
+  <rect id="svg_219" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="295.66667" y="425.50002" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <circle id="svg_220" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="329" cy="249" r="23.41382" stroke="#007fff"/>
+  <circle id="svg_221" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="406" cy="201" r="23.41382" stroke="#007fff"/>
+  <text id="svg_222" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="328" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">drive</text>
+  <text id="svg_223" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="407" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">level</text>
+  <text id="svg_229" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="367.2" y="453.2" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">Exit</text>
+ </g>
+ <g display="none">
+  <title>Reverb controls</title>
+  <rect id="svg_242" ry="4" rx="4" height="410" width="161" y="93" x="287" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" stroke="#007fff"/>
+  <rect id="svg_243" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="344" y="114" width="49" height="249" stroke="#007fff"/>
+  <rect id="svg_245" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="295.66667" y="425.50002" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <circle id="svg_246" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="368" cy="179" r="23.41382" stroke="#007fff"/>
+  <text id="svg_248" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="368" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">mix</text>
+  <text id="svg_250" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="367.2" y="453.2" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">Exit</text>
+ </g>
+ <g display="none">
+  <title>Delay controls</title>
+  <rect id="svg_230" ry="4" rx="4" height="410" width="239.99999" y="93" x="287" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" stroke="#007fff"/>
+  <rect id="svg_231" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="305" y="114" width="49" height="249" stroke="#007fff"/>
+  <rect id="svg_232" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="382" y="114" width="49" height="249" stroke="#007fff"/>
+  <rect id="svg_233" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="336.66667" y="427.50002" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <circle id="svg_234" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="329" cy="249" r="23.41382" stroke="#007fff"/>
+  <circle id="svg_235" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="406" cy="179" r="23.41382" stroke="#007fff"/>
+  <text id="svg_236" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="328" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">time</text>
+  <text id="svg_237" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="407" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">fdbck</text>
+  <text id="svg_238" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="408.2" y="455.2" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">Exit</text>
+  <rect id="svg_239" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="459" y="114" width="49" height="249" stroke="#007fff"/>
+  <circle id="svg_240" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="484" cy="272.41382" r="23.41382" stroke="#007fff"/>
+  <text id="svg_241" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="484" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">level</text>
+ </g>
+ <g display="none">
+  <title>Compressor Controls</title>
+  <rect id="svg_251" ry="4" rx="4" height="410" width="239.99999" y="93" x="287" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" stroke="#007fff"/>
+  <rect id="svg_252" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="305" y="114" width="49" height="249" stroke="#007fff"/>
+  <rect id="svg_253" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="382" y="114" width="49" height="249" stroke="#007fff"/>
+  <rect id="svg_254" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="336.66667" y="427.50002" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <circle id="svg_255" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="329" cy="249" r="23.41382" stroke="#007fff"/>
+  <circle id="svg_256" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="406" cy="179" r="23.41382" stroke="#007fff"/>
+  <text id="svg_257" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="328" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">thresh</text>
+  <text id="svg_258" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="407" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">ratio</text>
+  <text id="svg_259" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="408.2" y="455.2" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">Exit</text>
+  <rect id="svg_260" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="459" y="114" width="49" height="249" stroke="#007fff"/>
+  <circle id="svg_261" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="484" cy="272.41382" r="23.41382" stroke="#007fff"/>
+  <text id="svg_262" fill="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="484" y="391" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">level</text>
+ </g>
+ <g display="none">
+  <title>instrument controls</title>
+  <text id="svg_228" fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="297" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#3f3f3f">sustain</text>
+  <rect id="svg_263" ry="4" rx="4" height="410" width="239.99999" y="93" x="688" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" stroke="#007fff"/>
+  <rect id="svg_264" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="777.00001" y="139" width="142.99999" height="49" stroke="#007fff"/>
+  <rect id="svg_266" ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="736.66667" y="437.50002" width="144.66666" height="40" stroke="#bfbfbf"/>
+  <circle id="svg_268" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="807" cy="164" r="23.41382" stroke="#007fff"/>
+  <text id="svg_269" fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="173" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">attack</text>
+  <text id="svg_271" fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="809.2" y="465.2" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">Exit</text>
+  <rect id="svg_218" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="777" y="194" width="142.99999" height="49" stroke="#007fff"/>
+  <circle id="svg_224" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="839" cy="219" r="23.41382" stroke="#007fff"/>
+  <text id="svg_225" fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="228" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">decay</text>
+  <rect id="svg_226" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="777" y="249" width="142.99999" height="49" stroke="#007fff"/>
+  <circle id="svg_227" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="884" cy="274" r="23.41382" stroke="#007fff"/>
+  <rect id="svg_244" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="777" y="303" width="142.99999" height="49" stroke="#007fff"/>
+  <circle id="svg_247" fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="809" cy="328" r="23.41382" stroke="#007fff"/>
+  <text id="svg_249" fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="337" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">release</text>
+  <text id="svg_265" fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="281" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" stroke="#007fff">sustain</text>
+  <rect id="svg_267" ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="695.00002" y="104" width="223.99998" height="26" stroke="#007fff"/>
+  <path id="svg_270" d="m888.85712,111.42856l8.17316,11.42857l8.68402,-10.85716l-16.85718,-0.57141z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#007fff" stroke="#007fff"/>
+  <text transform="matrix(0.914533 0 0 0.835171 72.9378 22.9793)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_272" y="119.48307" x="797.66488" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#3f3f3f" stroke="#007fff">preset</text>
+  <rect ry="20" rx="20" fill="#aad4ff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="779" y="370" width="142.99999" height="49" id="svg_273" stroke="#007fff"/>
+  <circle fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="868" cy="394" r="23.41382" id="svg_274" stroke="#007fff"/>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="736" y="404" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_275" stroke="#007fff">volume</text>
+  <line fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="705" y1="363" x2="901" y2="362" id="svg_276" stroke-width="4" stroke="#bfbfbf"/>
+ </g>
+ <g display="inline">
+  <title>drum controls</title>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="297" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_277" stroke="#3f3f3f">sustain</text>
+  <rect ry="4" rx="4" height="410" width="396.99999" y="93" x="530.99999" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="4" fill="#ffffff" id="svg_278" stroke="#7f007f"/>
+  <rect ry="20" rx="20" fill="#d4aaff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="777.00001" y="139" width="142.99999" height="49" id="svg_279" stroke="#007fff"/>
+  <rect ry="4" rx="4" fill="#ffffff" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="737.66667" y="437.50002" width="144.66666" height="40" id="svg_280" stroke="#bfbfbf"/>
+  <circle fill="#7f007f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="807" cy="164" r="23.41382" id="svg_281" stroke="#007fff"/>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="173" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_282" stroke="#007fff">attack</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="809.2" y="465.2" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_283" stroke="#007fff">Exit</text>
+  <rect ry="20" rx="20" fill="#d4aaff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="777" y="194" width="142.99999" height="49" id="svg_284" stroke="#007fff"/>
+  <circle fill="#7f007f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="839" cy="219" r="23.41382" id="svg_285" stroke="#007fff"/>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="228" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_286" stroke="#007fff">decay</text>
+  <rect ry="20" rx="20" fill="#d4aaff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="777" y="249" width="142.99999" height="49" id="svg_287" stroke="#007fff"/>
+  <circle fill="#7f007f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="884" cy="274" r="23.41382" id="svg_288" stroke="#007fff"/>
+  <rect ry="20" rx="20" fill="#d4aaff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="777" y="303" width="142.99999" height="49" id="svg_289" stroke="#007fff"/>
+  <circle fill="#7f007f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="809" cy="328" r="23.41382" id="svg_290" stroke="#007fff"/>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="337" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_291" stroke="#007fff">release</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="734" y="281" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_292" stroke="#007fff">sustain</text>
+  <rect ry="20" rx="20" fill="#d4aaff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="695.00002" y="104" width="223.99998" height="26" id="svg_293" stroke="#007fff"/>
+  <path d="m888.85712,111.42856l8.17316,11.42857l8.68402,-10.85716l-16.85718,-0.57141z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#7f007f" id="svg_294" stroke="#007fff"/>
+  <text transform="matrix(0.914533 0 0 0.835171 72.9378 22.9793)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="119.48307" x="797.66488" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#3f3f3f" id="svg_295" stroke="#007fff">preset</text>
+  <rect ry="20" rx="20" fill="#d4aaff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="779" y="370" width="142.99999" height="49" id="svg_296" stroke="#007fff"/>
+  <circle fill="#7f007f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="868" cy="394" r="23.41382" id="svg_297" stroke="#007fff"/>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="736" y="404" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_298" stroke="#007fff">volume</text>
+  <line fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="705" y1="363" x2="901" y2="362" stroke-width="4" id="svg_299" stroke="#bfbfbf"/>
+  <rect stroke="#007fff" id="svg_317" ry="10" rx="10" fill="#d4aaff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="537.00001" y="98" width="149.99999" height="399"/>
+  <rect ry="5" rx="5" fill="#7f007f" stroke="#7f007f" stroke-width="4" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="549" y="419" width="127" height="38" id="svg_318"/>
+  <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_307" y="487" x="611" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">bass drum</text>
+  <text id="svg_308" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="447" x="611" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#ffffff">snare drum</text>
+  <text id="svg_309" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="407" x="611" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">handclap</text>
+  <text id="svg_310" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="368" x="611" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">closed HH</text>
+  <text id="svg_311" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="326" x="611" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">open HH</text>
+  <text id="svg_312" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="287" x="611" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">ride cymbal</text>
+  <text id="svg_313" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="247" x="612" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">crash cymbal</text>
+  <text id="svg_314" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="207" x="612" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">low tom</text>
+  <text id="svg_315" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="166" x="612" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">mid tom</text>
+  <text id="svg_316" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="130" x="612" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#3f7f00" fill="#3f3f3f">high tom</text>
+ </g>
+ <g display="inline">
+  <title>logo</title>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="965.47445" y="76.57666" id="svg_300" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" font-weight="normal" stroke="#007fff" transform="matrix(1.311 0 0 1.311 -294.576 -24.4716)">see</text>
+  <text fill="#3f3f3f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="1036.94784" y="74.41935" id="svg_302" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" font-weight="normal" transform="matrix(1.41245 0 0 1.45313 -396.676 -33.4422)" stroke="#007fff">SAW</text>
+  <text fill="#007fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="989.53839" y="76.7108" id="svg_301" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(1.36834 0 0 1.55197 -351.235 -43.1426)" font-weight="bold" stroke="#007fff">/</text>
+  <text fill="#ff0000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="993.53839" y="76.7108" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_303" transform="matrix(1.36834 0 0 1.55197 -351.235 -43.1426)" font-weight="bold" stroke="#007fff">/</text>
+  <text fill="#ff7f00" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="997.53839" y="76.7108" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_304" transform="matrix(1.36834 0 0 1.55197 -351.235 -43.1426)" font-weight="bold" stroke="#007fff">/</text>
+  <text fill="#3f7f00" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="1001.53839" y="76.7108" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_305" transform="matrix(1.36834 0 0 1.55197 -351.235 -43.1426)" font-weight="bold" stroke="#3f7f00">/</text>
+  <text fill="#7f007f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="1005.89966" y="76.7108" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" id="svg_306" transform="matrix(1.36834 0 0 1.55197 -351.235 -43.1426)" font-weight="bold" stroke="#007fff">/</text>
+ </g>
+</svg>
