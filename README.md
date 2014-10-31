@@ -11,10 +11,9 @@ Authors/Contributions:
 
 We first used Mercurial for version control, and only then decided to host it on github, so we lost all commit history.
 
-Right now we're deciding on a new name (seeSAW is already taken) and as soon as we do that we'll host this project on github pages.
-Until then you'll have to download it and run it in a webserver to try it out. 
+Right now we're deciding on a new name (seeSAW is already taken).
 
-The easiest way to do that is:
+You can try it out by visiting [https://dshr.github.io/see_saw](dshr.github.io/see_saw) or you can run it on a local http server like this:
 
 - get Python
 - open Terminal
